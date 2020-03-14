@@ -1,0 +1,30 @@
+$yellow1: #FFC832;
+$yellow2: #FFE08B;
+$white1: #ffffff;
+$white2: #f2f2f2f2;
+$dark1: #000;
+$gray1: #696969;
+$gray2: #8B8B8B;
+
+$colours: "yellow1" #FFC832,
+"yellow2" #FFE08B,
+"white1" #ffffff,
+"white2" #f2f2f2f2,
+"dark1" #000,
+"gray1" #696969,
+"gray2" #8B8B8B;
+
+@each $i in $colours {
+  .bg-#{nth($i, 1)} {
+    background-color: nth($i, 2) !important;
+    background: nth($i, 2) !important;
+  }
+
+  .color-#{nth($i, 1)} {
+    color: nth($i, 2) !important;
+  }
+
+  .border-#{nth($i, 1)} {
+    border: 1px solid nth($i, 2) !important;
+  }
+}

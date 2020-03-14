@@ -52,7 +52,16 @@ export default {
       .setTween(tl)
       .addIndicators({ name: "1 (duration: 0)" }) // add indicators (requires plugin)
       .addTo(controller);
+    const scene2 = this.$scrollmagic
+      .scene({
+        triggerElement: ".head"
+      })
+      .setTween(tl)
+      .addIndicators({ name: "1 (duration: 0)" }) // add indicators (requires plugin)
+      .addTo(controller);
     this.$scrollmagic.addScene(scene);
+
+    this.$scrollmagic.addScene(scene2);
   }
 };
 </script>

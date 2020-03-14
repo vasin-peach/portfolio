@@ -1,0 +1,30 @@
+
+@font-face {
+  font-family: "Nobel";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("~@fonts/nobel-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nobel";
+  font-style: normal;
+  font-weight: lighter;
+  font-display: swap;
+  src: url("~@fonts/nobel-light.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: "Nobel";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url("~@fonts/nobel-bold.ttf") format("truetype");
+}
+
+
+* {
+  font-family: "Nobel", "sans-serif";
+}

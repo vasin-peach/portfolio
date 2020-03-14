@@ -4,6 +4,7 @@ import router from "./router";
 import VueScrollmagic from "vue-scrollmagic";
 
 Vue.use(VueScrollmagic);
+
 Vue.config.productionTip = false;
 
 new Vue({
