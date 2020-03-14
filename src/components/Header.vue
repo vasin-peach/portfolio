@@ -25,7 +25,7 @@ export default {
       .scene({
         triggerElement: ".header-section"
       })
-      .setTween(".header-section", 0.5, {
+      .setTween(".header-section", 1, {
         css: {
           right: "0px"
         }

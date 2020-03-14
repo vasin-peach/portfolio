@@ -1,9 +1,15 @@
 <template>
-  <div class="home"></div>
+  <div class="home">
+    <HelloWord></HelloWord>
+  </div>
 </template>
 
 <script>
+import HelloWord from "@components/HelloWorld";
 export default {
-  name: "Home"
+  name: "Home",
+  components: {
+    HelloWord
+  }
 };
 </script>

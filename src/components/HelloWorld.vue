@@ -44,30 +44,20 @@ export default {
       opacity: 0
     });
 
-    const controller = this.$scrollmagic.controller;
     const scene = this.$scrollmagic
       .scene({
         triggerElement: ".head"
       })
-      .setTween(tl)
-      .addIndicators({ name: "1 (duration: 0)" }) // add indicators (requires plugin)
-      .addTo(controller);
-    const scene2 = this.$scrollmagic
-      .scene({
-        triggerElement: ".head"
-      })
-      .setTween(tl)
-      .addIndicators({ name: "1 (duration: 0)" }) // add indicators (requires plugin)
-      .addTo(controller);
-    this.$scrollmagic.addScene(scene);
+      .setTween(tl);
 
-    this.$scrollmagic.addScene(scene2);
+    this.$scrollmagic.addScene(scene);
   }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+@import "@scss/color";
 .head {
   position: relative;
   > div {
@@ -76,7 +66,7 @@ export default {
     height: 300px;
     padding: 15px;
     font-size: 40px;
-    background: orange;
+    background: $yellow1;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -16,4 +16,10 @@ export default {
 <style lang="scss">
 @import "@scss/font";
 @import "@scss/color";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
 </style>
