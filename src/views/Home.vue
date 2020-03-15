@@ -1,15 +1,20 @@
 <template>
-  <div class="home">
-    <HelloWord></HelloWord>
+  <div class="home-container container">
+    <Brand />
   </div>
 </template>
 
 <script>
-import HelloWord from "@components/HelloWorld";
+import Brand from "@components/home/Brand";
 export default {
   name: "Home",
   components: {
-    HelloWord
+    Brand
   }
 };
 </script>
+
+<style scoped lang="scss">
+.home-container {
+}
+</style>

@@ -1,22 +1,8 @@
 <template>
-  <div>
-    <div class="head">
-      <div>
-        <div class="title">VASIN SERMSAMPAN</div>
-        <div class="sub">FULL STACK DEVELOPER</div>
-      </div>
-    </div>
-    <div class="section">
-      Section1
-    </div>
-    <div class="section">
-      Section2
-    </div>
-    <div class="section section2">
-      <div>Section3</div>
-    </div>
-    <div class="section section2">
-      <div>Section4</div>
+  <div class="brand-component">
+    <div>
+      <div class="title">VASIN SERMSAMPAN</div>
+      <div class="sub">FULL STACK DEVELOPER</div>
     </div>
   </div>
 </template>
@@ -24,29 +10,27 @@
 <script>
 import { TimelineMax } from "gsap";
 export default {
-  name: "HelloWorld",
+  name: "Brand",
   mounted() {
     var tl = new TimelineMax({
-      delay: 0,
-      repeat: 3,
-      repeatDelay: 2
+      delay: 0
     });
 
-    tl.from(".head >div", 1, {
+    tl.from(".brand-component > div", 1, {
       height: "0"
     });
-    tl.from(".head >div .title", 1, {
+    tl.from(".brand-component > div .title", 1, {
       transform: "translateX(-50px)",
       opacity: 0
     });
-    tl.from(".head >div .sub", 1, {
+    tl.from(".brand-component > div .sub", 1, {
       transform: "translateX(-100px)",
       opacity: 0
     });
 
     const scene = this.$scrollmagic
       .scene({
-        triggerElement: ".head"
+        triggerElement: ".brand-component"
       })
       .setTween(tl);
 
@@ -58,7 +42,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 @import "@scss/color";
-.head {
+.brand-component {
   position: relative;
   > div {
     text-align: left;

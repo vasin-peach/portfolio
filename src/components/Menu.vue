@@ -1,16 +1,16 @@
 <template>
-  <div class="header-section">
-    <div class="header-wrapper">
-      <a href="#" class="header-item">
+  <div class="menu-section">
+    <div class="menu-wrapper">
+      <a href="#" class="menu-item">
         <div class="brand">O</div>
       </a>
-      <a href="#" class="header-item">
+      <a href="#" class="menu-item">
         <img src="@images/icon/about.svg" />
       </a>
-      <a href="#" class="header-item ">
+      <a href="#" class="menu-item ">
         <img src="@images/icon/code.svg" />
       </a>
-      <a href="#" class="header-item">
+      <a href="#" class="menu-item">
         <img src="@images/icon/contact.svg" />
       </a>
     </div>
@@ -19,13 +19,13 @@
 
 <script>
 export default {
-  name: "Header",
+  name: "Menu",
   mounted() {
     const scene = this.$scrollmagic
       .scene({
-        triggerElement: ".header-section"
+        triggerElement: ".menu-section"
       })
-      .setTween(".header-section", 1, {
+      .setTween(".menu-section", 1, {
         css: {
           right: "0px"
         }
@@ -38,16 +38,16 @@ export default {
 
 <style lang="scss" scoped>
 @import "@scss/color";
-.header-section {
+.menu-section {
   position: fixed;
   top: 0;
   right: -80px;
 
-  .header-wrapper {
+  .menu-wrapper {
     position: relative;
     display: flex;
     flex-direction: column;
-    .header-item {
+    .menu-item {
       border: 1px solid $white3;
       transition: all 0.3s ease-in-out;
       min-width: 80px;

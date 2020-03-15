@@ -1,21 +1,26 @@
 <template>
   <div id="app">
-    <Header />
+    <Menu />
     <router-view />
   </div>
 </template>
 
 <script>
-import Header from "@components/Header";
+import Menu from "@components/Menu";
 export default {
   name: "App",
-  components: { Header }
+  components: { Menu }
 };
 </script>
 
 <style lang="scss">
 @import "@scss/font";
 @import "@scss/color";
+@import "@scss/bootstrap";
+
+// bootstrap
+@import "~bootstrap";
+@import "~bootstrap-vue";
 
 html,
 body {
