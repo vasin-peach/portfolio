@@ -1,24 +1,73 @@
 <template>
   <div class="intro-component">
-    <div class="intro-wrapper">
-      <div class="intro-head">
-        <span></span>
-        <span>ABOUT</span>
+    <div class="row m-0">
+      <div class="intro-wrapper col-6 pr-5">
+        <div class="intro-head">
+          <span></span>
+          <span>ABOUT</span>
+        </div>
+        <div class="intro-card">
+          <div class="card-title">
+            FULL STACK DEVELOPER<br />
+            FREELANCE <br />EXPERIENCE 3 Y+
+          </div>
+          <div class="card-sub">
+            building application and design website for leading companies.
+          </div>
+          <div class="card-text">
+            Also have experience in data science on university projects such as
+            model articles classification data visualization with real-time
+            frontend used D3.js, Tableau, PowerBI and data extraction from
+            various sources (ex. LinkedIn, college board), looking for an
+            opportunities to work in Full Stack and Data Science field as CO-OP
+            and Internship
+          </div>
+        </div>
       </div>
-      <div class="intro-card">
-        <div class="card-title">
-          FULL STACK DEVELOPER<br />
-          FREELANCE <br />EXPERIENCE 3 Y+
+      <div class="intro-wrapper col-6 pl-5">
+        <div class="intro-head">
+          <span></span>
+          <span>ABOUT</span>
         </div>
-        <div class="card-sub">
-          building application and design website for leading companies.
+        <div class="intro-card">
+          <div class="card-title">
+            FULL STACK DEVELOPER<br />
+            FREELANCE <br />EXPERIENCE 3 Y+
+          </div>
+          <div class="card-sub">
+            building application and design website for leading companies.
+          </div>
+          <div class="card-text">
+            Also have experience in data science on university projects such as
+            model articles classification data visualization with real-time
+            frontend used D3.js, Tableau, PowerBI and data extraction from
+            various sources (ex. LinkedIn, college board), looking for an
+            opportunities to work in Full Stack and Data Science field as CO-OP
+            and Internship
+          </div>
         </div>
-        <div class="card-text">
-          Also have experience in data science on university projects such as
-          model articles classification data visualization with real-time
-          frontend used D3.js, Tableau, PowerBI and data extraction from various
-          sources (ex. LinkedIn, college board), looking for an opportunities to
-          work in Full Stack and Data Science field as CO-OP and Internship
+      </div>
+      <div class="intro-wrapper col-6 pr-5">
+        <div class="intro-head">
+          <span></span>
+          <span>ABOUT</span>
+        </div>
+        <div class="intro-card">
+          <div class="card-title">
+            FULL STACK DEVELOPER<br />
+            FREELANCE <br />EXPERIENCE 3 Y+
+          </div>
+          <div class="card-sub">
+            building application and design website for leading companies.
+          </div>
+          <div class="card-text">
+            Also have experience in data science on university projects such as
+            model articles classification data visualization with real-time
+            frontend used D3.js, Tableau, PowerBI and data extraction from
+            various sources (ex. LinkedIn, college board), looking for an
+            opportunities to work in Full Stack and Data Science field as CO-OP
+            and Internship
+          </div>
         </div>
       </div>
     </div>
