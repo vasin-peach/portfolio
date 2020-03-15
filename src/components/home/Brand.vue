@@ -16,9 +16,16 @@ export default {
       delay: 0
     });
 
-    tl.from(".brand-component > div", 1, {
-      height: "0"
-    });
+    tl.from(
+      ".brand-component > div",
+      1,
+      {
+        height: "0"
+      },
+      {
+        ease: "power4"
+      }
+    );
     tl.from(".brand-component > div .title", 1, {
       transform: "translateX(-50px)",
       opacity: 0
@@ -43,13 +50,14 @@ export default {
 <style scoped lang="scss">
 @import "@scss/color";
 .brand-component {
+  height: 300px;
   position: relative;
   > div {
     text-align: left;
     width: 300px;
     height: 300px;
-    padding: 15px;
-    font-size: 40px;
+    padding: 15px 30px;
+    font-size: 35px;
     background: $yellow1;
     display: flex;
     justify-content: center;

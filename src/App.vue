@@ -14,13 +14,13 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@scss/font";
-@import "@scss/color";
-@import "@scss/bootstrap";
-
 // bootstrap
 @import "~bootstrap";
 @import "~bootstrap-vue";
+
+@import "@scss/font";
+@import "@scss/color";
+@import "@scss/bootstrap";
 
 html,
 body {

@@ -50,8 +50,9 @@ export default {
     .menu-item {
       border: 1px solid $white3;
       transition: all 0.3s ease-in-out;
-      min-width: 80px;
+      // min-width: 80px;
       display: flex;
+      padding: 10px;
 
       &:first-child {
         background: $yellow1;
@@ -71,7 +72,11 @@ export default {
     img {
       width: 50px;
       height: 50px;
-      padding: 15px;
+      padding: 10px;
+    }
+
+    a {
+      text-decoration: none;
     }
 
     .brand {
