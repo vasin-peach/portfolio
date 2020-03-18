@@ -1,14 +1,10 @@
 <template>
   <div class="intro-component">
     <div class="row">
-      <div class="mask">
-        <!-- <img src="@images/circle.png" /> -->
-      </div>
       <div
         class="col-12 col-md-6 intro-left intro-float p-2 pr-sm-3 pr-md-4 pr-lg-5"
       >
         <IntroCard :options="introCards[2]" />
-        <!-- <IntroCard :options="introCards[1]" /> -->
       </div>
       <div
         class="col-12 col-md-6 intro-right intro-float p-2 pl-sm-3 pl-md-4 pl-lg-5"
@@ -22,7 +18,8 @@
 
 <script>
 import IntroCard from "./IntroCard";
-
+import $ from "jquery";
+// import { TweenMax } from "gsap";
 export default {
   name: "Intro",
   components: {
@@ -32,17 +29,20 @@ export default {
     return {
       introCards: [
         {
+          head: "VISION",
           title: "TAKE \rEVERY PROJECT \rAS A CHALLENGE",
           sub:
             "Create unique and custom made experience for client through design, creativity"
         },
         {
+          head: "ABOUT",
           title: "FULL STACK DEVELOPER \r FREELANCE \nEXPERIENCE 3 Y+",
           sub: "building application and design website for leading companies.",
           text:
             "Also have experience in data science on university projects such as model articles classification data visualization with real-time frontend used D3.js, Tableau, PowerBI and data extraction from various sources (ex. LinkedIn, college board), looking for an opportunities to work in Full Stack and Data Science field as CO-OP and Internship"
         },
         {
+          head: "BIO",
           title: "21 YEAR OLD WITH \rFULL OF PASSION TO \rDOING NEW THING ",
           sub:
             "My name is vasin sermsampan  or you can call me `Peach`,  I am 21 years old, studying data science and business analytic at kingmongkutt's Institute of Technology ladkrabang, ",
@@ -53,6 +53,32 @@ export default {
     };
   },
   mounted() {
+    var _this = this;
+    $(".intro-card-component").each(function() {
+      const load1 = _this.$scrollmagic
+        .scene({
+          triggerElement: this,
+          triggerHook: 0.9,
+          reverse: false
+        })
+        .setClassToggle(this, "fade-in")
+        .setTween(
+          this,
+          1.5,
+          {
+            css: {
+              y: -50,
+              opacity: 1
+            }
+          },
+          {
+            ease: "power4.easeIn"
+          }
+        );
+
+      _this.$scrollmagic.addScene(load1);
+    });
+
     const scene1 = this.$scrollmagic
       .scene({
         triggerElement: "body",

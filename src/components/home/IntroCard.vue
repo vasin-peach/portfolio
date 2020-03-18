@@ -3,7 +3,7 @@
     <div class="intro-wrapper">
       <div class="intro-head">
         <span></span>
-        <span>ABOUT</span>
+        <span>{{ options.head }}</span>
       </div>
       <div class="intro-card">
         <div class="card-title">
@@ -30,6 +30,13 @@ export default {
 <style lang="scss" scoped>
 @import "@scss/color";
 @import "@scss/media";
+.intro-card-component {
+  opacity: 0;
+  // .intro-card > div {
+  //   transform: translate(-50px, 0);
+  //   opacity: 0;
+  // }
+}
 .intro-head {
   display: flex;
   align-items: center;
@@ -48,9 +55,9 @@ export default {
   padding: 20px 30px;
   padding-bottom: 70px;
   padding-top: 40px;
-  box-shadow: 0 0 2px 0px $white1;
-  // background: $white1;
-  background-image: url("~@images/circle2.png");
+  // box-shadow: 0 0 2px 0px $white1;
+  background: rgba($color: $yellow2, $alpha: 0.1);
+  background-image: url("~@images/circle5.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
@@ -63,12 +70,12 @@ export default {
     // background-image: url("~@images/circle2.png");
     background-clip: text;
     color: $yellow1;
-    mix-blend-mode: exclusion;
+    mix-blend-mode: color-dodge;
     -webkit-text-fill-color: transparent;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    text-shadow: 0 1px;
+    text-shadow: 0 1px $yellow1;
     @include lg {
       font-size: 30px;
     }
@@ -107,12 +114,12 @@ export default {
     background-image: url("~@images/circle4.png");
     background-clip: text;
     color: $white1;
-    mix-blend-mode: difference;
+    mix-blend-mode: color-dodge;
     -webkit-text-fill-color: transparent;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    text-shadow: 0 1px $yellow1;
+    text-shadow: 0 1px $white2;
 
     @include lg {
       font-size: 20px;

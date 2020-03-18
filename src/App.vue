@@ -10,7 +10,21 @@ import Menu from "@components/Menu";
 
 export default {
   name: "App",
-  components: { Menu }
+  components: { Menu },
+  mounted() {
+    // const scene1 = this.$scrollmagic
+    //   .scene({
+    //     triggerElement: "body",
+    //     // {0,0.5,1} - animations starts from {top,center,end} of window
+    //     triggerHook: 0,
+    //     // Duration of animation
+    //     duration: "100%"
+    //   })
+    //   .setTween("body", {
+    //     backgroundPosition: "0 30%"
+    //   });
+    // this.$scrollmagic.addScene(scene1);
+  }
 };
 </script>
 
@@ -28,7 +42,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background: rgb(0, 0, 0);
+  background: rgb(4, 4, 19);
   background-image: url("~@images/bg.png");
   background-repeat: no-repeat;
   background-size: cover;

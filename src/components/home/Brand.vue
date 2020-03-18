@@ -19,7 +19,7 @@ export default {
       ".brand-component > div",
       1,
       {
-        height: "200"
+        height: "0"
       },
       {
         ease: "power4"
