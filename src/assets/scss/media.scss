@@ -24,13 +24,13 @@ $ex: 1500px;
 }
 
 @mixin lg {
-  @media (min-width: #{$lg}) {
+  @media (max-width: #{$lg}) {
     @content;
   }
 }
 
 @mixin ex {
-  @media (min-width: #{$ex}) {
+  @media (max-width: #{$ex}) {
     @content;
   }
 }

@@ -15,33 +15,26 @@ export default {
     var tl = new TimelineMax({
       delay: 0
     });
-
     tl.from(
       ".brand-component > div",
       1,
       {
-        height: "0"
+        height: "200"
       },
       {
         ease: "power4"
       }
     );
     tl.from(".brand-component > div .title", 1, {
-      transform: "translateX(-50px)",
+      x: "-50px",
       opacity: 0
     });
     tl.from(".brand-component > div .sub", 1, {
-      transform: "translateX(-100px)",
+      x: "-50",
       opacity: 0
     });
 
-    const scene = this.$scrollmagic
-      .scene({
-        triggerElement: ".brand-component"
-      })
-      .setTween(tl);
-
-    this.$scrollmagic.addScene(scene);
+    tl.play();
   }
 };
 </script>
@@ -53,11 +46,12 @@ export default {
   height: 300px;
   position: relative;
   > div {
+    box-shadow: 0 0 1px 0px $white1;
     text-align: left;
-    width: 300px;
+    width: 400px;
     height: 300px;
     padding: 15px 30px;
-    font-size: 35px;
+    font-size: 50px;
     background: $yellow1;
     display: flex;
     justify-content: center;
@@ -70,7 +64,7 @@ export default {
       opacity: 1;
       &:last-child {
         margin-top: 30px;
-        font-size: 15px;
+        font-size: 25px;
         color: #000;
       }
     }

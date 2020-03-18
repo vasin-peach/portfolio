@@ -34,7 +34,7 @@ export default {
   border-left: 10px solid $dark1;
 
   @include md {
-    padding: 0;
+    padding: 30px;
     border: none;
   }
 }

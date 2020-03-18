@@ -3,10 +3,16 @@ import App from "./App.vue";
 import router from "./router";
 import VueScrollmagic from "vue-scrollmagic";
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
+// import Scrollbar from "smooth-scrollbar";
 
-Vue.use(VueScrollmagic);
+Vue.use(VueScrollmagic, {
+  refreshInterval: 0
+});
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
+
+// intialize scrollbar
+// Scrollbar.init(document.querySelector("#app"));
 
 Vue.config.productionTip = false;
 

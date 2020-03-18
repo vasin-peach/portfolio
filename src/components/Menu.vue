@@ -18,20 +18,18 @@
 </template>
 
 <script>
+import { TimelineMax } from "gsap";
 export default {
   name: "Menu",
   mounted() {
-    const scene = this.$scrollmagic
-      .scene({
-        triggerElement: ".menu-section"
-      })
-      .setTween(".menu-section", 1, {
-        css: {
-          right: "0px"
-        }
-      });
+    var tl = new TimelineMax({
+      delay: 0
+    });
+    tl.to(".menu-section", 1.5, {
+      right: "0px"
+    });
 
-    this.$scrollmagic.addScene(scene);
+    tl.play();
   }
 };
 </script>
@@ -48,12 +46,12 @@ export default {
     position: relative;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 0 2px 0px $white1;
 
     @include md {
       flex-direction: row;
     }
     .menu-item {
-      border: 1px solid $white3;
       transition: all 0.3s ease-in-out;
       // min-width: 80px;
       display: flex;
