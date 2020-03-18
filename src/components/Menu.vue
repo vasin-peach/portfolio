@@ -18,10 +18,12 @@
 </template>
 
 <script>
-import { TimelineMax } from "gsap";
+// import { TimelineMax } from "gsap";
 export default {
   name: "Menu",
   mounted() {
+    const GSAP = require("gsap");
+    const { TimelineMax } = GSAP;
     var tl = new TimelineMax({
       delay: 0
     });
