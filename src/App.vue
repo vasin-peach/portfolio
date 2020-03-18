@@ -30,5 +30,7 @@ body {
   margin: 0;
   background: rgb(0, 0, 0);
   background-image: url("~@images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 </style>
