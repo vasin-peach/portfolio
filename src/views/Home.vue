@@ -23,6 +23,7 @@ export default {
 
 <style scoped lang="scss">
 @import "@scss/color";
+@import "@scss/media";
 .h {
   height: 70vh;
 }
@@ -31,5 +32,10 @@ export default {
   padding-right: 72px;
   padding-left: 72px;
   border-left: 10px solid $dark1;
+
+  @include md {
+    padding: 0;
+    border: none;
+  }
 }
 </style>

@@ -38,15 +38,20 @@ export default {
 
 <style lang="scss" scoped>
 @import "@scss/color";
+@import "@scss/media";
 .menu-section {
   position: fixed;
   top: 0;
   right: -80px;
-
+  z-index: 5;
   .menu-wrapper {
     position: relative;
     display: flex;
     flex-direction: column;
+
+    @include md {
+      flex-direction: row;
+    }
     .menu-item {
       border: 1px solid $white3;
       transition: all 0.3s ease-in-out;
