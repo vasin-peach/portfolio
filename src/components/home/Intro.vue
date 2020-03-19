@@ -55,7 +55,8 @@ export default {
           head: "WELCOME",
           title: "PEACH(ES)\nVASIN SERMSAMPAN",
           sub:
-            "King Mongkut's Institute Of Technology Ladkrabang  \nData Science And Business Analytics"
+            "King Mongkut's Institute Of Technology Ladkrabang  \nData Science And Business Analytics",
+          img: require("@images/profile.jpg")
         }
       ]
     };
@@ -66,10 +67,10 @@ export default {
       const load1 = _this.$scrollmagic
         .scene({
           triggerElement: this,
-          triggerHook: 0.8,
+          triggerHook: 0.6,
           reverse: false
         })
-        .setClassToggle(this, "fade-in")
+        .setClassToggle($(this).find(".intro-card"), "fade-in")
         .setTween(
           this,
           1,
@@ -83,6 +84,7 @@ export default {
             ease: "power4.easeOut"
           }
         );
+      // .addIndicators({ name: "2 (duration: 300)" });
 
       _this.$scrollmagic.addScene(load1);
     });
@@ -111,8 +113,10 @@ export default {
         y: "-30vh"
       });
 
-    this.$scrollmagic.addScene(scene1);
-    this.$scrollmagic.addScene(scene2);
+    if ($(window).width() > 992) {
+      this.$scrollmagic.addScene(scene1);
+      this.$scrollmagic.addScene(scene2);
+    }
 
     let y = 0;
 
@@ -148,6 +152,10 @@ export default {
   > div {
     margin-top: 150px;
     position: relative;
+
+    @include sm {
+      margin-top: 80px;
+    }
   }
 
   .mask {
@@ -176,15 +184,19 @@ export default {
       @include md {
         margin-bottom: 70px;
       }
+
+      @include sm {
+        margin-bottom: 50px;
+      }
     }
   }
 
   .card-highlight {
     .intro-card {
-      background-color: $yellow1;
+      background-color: rgba($color: $yellow1, $alpha: 0.5);
       .card-title {
-        color: $dark1 !important;
-        text-shadow: 0 1px $dark1 !important;
+        color: $white1 !important;
+        text-shadow: 0 1px $white1 !important;
         -webkit-text-fill-color: none !important;
         mix-blend-mode: initial;
       }

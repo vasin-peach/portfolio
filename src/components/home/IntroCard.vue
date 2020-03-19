@@ -14,6 +14,7 @@
         </div>
         <div class="card-text">
           {{ options.text }}
+          <div><img :src="options.img" /></div>
         </div>
       </div>
     </div>
@@ -101,11 +102,25 @@ export default {
     font-size: 20px;
     color: $white1;
 
+    > div {
+      width: 100%;
+      img {
+        width: 50%;
+      }
+    }
+
     @include lg {
       font-size: 20px;
     }
     @include md {
       font-size: 18px;
+
+      > div {
+        text-align: center;
+        img {
+          width: 100%;
+        }
+      }
     }
   }
 }

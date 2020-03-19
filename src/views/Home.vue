@@ -40,5 +40,9 @@ export default {
     padding: 30px;
     border: none;
   }
+
+  @include sm {
+    padding: 7px;
+  }
 }
 </style>

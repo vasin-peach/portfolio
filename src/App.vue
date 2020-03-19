@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <Menu />
+    <!-- <Menu /> -->
     <router-view />
   </div>
 </template>
 
 <script>
-import Menu from "@components/Menu";
+// import Menu from "@components/Menu";
 // import Scrollbar from "smooth-scrollbar";
 
 export default {
-  name: "App",
-  components: { Menu }
+  name: "App"
+  // components: { Menu }
 };
 </script>
 
@@ -28,13 +28,14 @@ export default {
 
 html,
 body {
-  min-height: 100vh;
+  height: 100vh;
   padding: 0;
   margin: 0;
   background: rgb(4, 4, 19);
   background-image: url("~@images/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 #app {

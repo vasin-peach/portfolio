@@ -44,8 +44,13 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 @import "@scss/color";
+@import "@scss/media";
 .brand-component {
   height: 300px;
+
+  @include sm {
+    height: 150px;
+  }
   position: relative;
   > div {
     box-shadow: 0 0 1px 0px $white1;
@@ -68,6 +73,26 @@ export default {
         margin-top: 30px;
         font-size: 25px;
         color: #000;
+      }
+    }
+
+    @include md {
+      width: 300px;
+
+      .title {
+        font-size: 30px;
+      }
+    }
+    @include sm {
+      width: 100%;
+      height: 150px;
+
+      .title {
+        font-size: 20px;
+      }
+
+      .sub {
+        margin-top: 0px !important;
       }
     }
   }
