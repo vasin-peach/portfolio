@@ -70,7 +70,6 @@ export default {
           triggerHook: 0.6,
           reverse: false
         })
-        .setClassToggle($(this).find(".intro-card"), "fade-in")
         .setTween(
           this,
           1,
