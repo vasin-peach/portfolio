@@ -19,6 +19,7 @@
 
 <script>
 import IntroCard from "./IntroCard";
+import Scrollbar from "smooth-scrollbar";
 import $ from "jquery";
 // import { TweenMax } from "gsap";
 export default {
@@ -111,6 +112,30 @@ export default {
 
     this.$scrollmagic.addScene(scene1);
     this.$scrollmagic.addScene(scene2);
+
+    let y = 0;
+
+    let scroll = Scrollbar.init(document.querySelector("#app"), {
+      damping: 0.05,
+      alwaysShowTracks: true
+    });
+
+    let isChrome =
+      /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+
+    // update scrollY if chorme
+    if (isChrome) {
+      this.$scrollmagic.scrollPos(function() {
+        return y;
+      });
+    }
+
+    var scrollmagic = this.$scrollmagic;
+
+    scroll.addListener(function(status) {
+      y = status.offset.y;
+      scrollmagic.update();
+    });
   }
 };
 </script>
