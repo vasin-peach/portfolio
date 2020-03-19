@@ -11,33 +11,7 @@ import Menu from "@components/Menu";
 
 export default {
   name: "App",
-  components: { Menu },
-  created() {
-    this.$nextTick(function() {
-      console.log("hi");
-      // Scrollbar.init(document.querySelector("html"), {
-      //   damping: 0.05,
-      //   alwaysShowTracks: true
-      // });
-      window.onbeforeunload = function() {
-        window.scrollTo(0, 0);
-      };
-    });
-  },
-  mounted() {
-    // const scene1 = this.$scrollmagic
-    //   .scene({
-    //     triggerElement: "body",
-    //     // {0,0.5,1} - animations starts from {top,center,end} of window
-    //     triggerHook: 0,
-    //     // Duration of animation
-    //     duration: "100%"
-    //   })
-    //   .setTween("body", {
-    //     backgroundPosition: "0 30%"
-    //   });
-    // this.$scrollmagic.addScene(scene1);
-  }
+  components: { Menu }
 };
 </script>
 
@@ -47,6 +21,7 @@ export default {
 @import "~bootstrap-vue";
 
 @import url("https://fonts.googleapis.com/css?family=Baloo+2:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Sen:400,700&display=swapp");
 @import "@scss/font";
 @import "@scss/color";
 @import "@scss/bootstrap";

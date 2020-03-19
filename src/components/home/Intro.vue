@@ -54,7 +54,8 @@ export default {
         {
           head: "WELCOME",
           title: "PEACH(ES)\nVASIN SERMSAMPAN",
-          sub: "king mongkut's institute of technology ladkrabang"
+          sub:
+            "King Mongkut's Institute Of Technology Ladkrabang  \nData Science And Business Analytics"
         }
       ]
     };

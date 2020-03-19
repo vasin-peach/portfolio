@@ -63,19 +63,14 @@ export default {
   background-size: cover;
 
   .card-title {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
     white-space: pre-wrap;
     word-wrap: break-word;
     font-family: inherit;
-    background-image: url("~@images/circle2.png");
-    background-clip: text;
     color: $yellow1;
-    mix-blend-mode: color-dodge;
+    mix-blend-mode: multiply;
     -webkit-text-fill-color: transparent;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
     text-shadow: 0 1px $yellow1;
     @include lg {
       font-size: 30px;
@@ -86,21 +81,15 @@ export default {
   }
 
   .card-sub {
-    font-size: 30px;
+    font-size: 27px;
     color: $dark1;
     padding-bottom: 20px;
-
-    background-image: url("~@images/circle4.png");
-    background-clip: text;
     color: $white1;
-    mix-blend-mode: color-dodge;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    text-shadow: 0 1px;
+    mix-blend-mode: hard-light;
+    text-shadow: 0 1px $yellow1;
 
     @include lg {
-      font-size: 25;
+      font-size: 25px;
     }
     @include md {
       font-size: 20px;
@@ -109,15 +98,8 @@ export default {
 
   .card-text {
     font-weight: lighter;
-    font-size: 25px;
-    background-image: url("~@images/circle4.png");
-    background-clip: text;
+    font-size: 20px;
     color: $white1;
-    mix-blend-mode: color-dodge;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    text-shadow: 0 1px $white2;
 
     @include lg {
       font-size: 20px;
