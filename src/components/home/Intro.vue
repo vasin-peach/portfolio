@@ -92,7 +92,7 @@ export default {
         duration: "100%"
       })
       .setTween(".intro-left", {
-        y: "-10vh"
+        y: "-15vh"
       });
 
     const scene2 = this.$scrollmagic
