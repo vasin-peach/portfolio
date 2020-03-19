@@ -5,6 +5,7 @@
         class="col-12 col-md-6 intro-left intro-float p-2 pr-sm-3 pr-md-4 pr-lg-5"
       >
         <IntroCard :options="introCards[2]" />
+        <IntroCard :options="introCards[3]" class="card-highlight" />
       </div>
       <div
         class="col-12 col-md-6 intro-right intro-float p-2 pl-sm-3 pl-md-4 pl-lg-5"
@@ -48,6 +49,11 @@ export default {
             "My name is vasin sermsampan  or you can call me `Peach`,  I am 21 years old, studying data science and business analytic at kingmongkutt's Institute of Technology ladkrabang, ",
           text:
             "Now, I have experience in web Full-Stack area for 3 year, Working freelance in Thailand, accepting work from both domestic and foreign countries, my main skills include Coding / Creative / Art / UX & UI Design and Data Science."
+        },
+        {
+          head: "WELCOME",
+          title: "PEACH(ES)\nVASIN SERMSAMPAN",
+          sub: "king mongkut's institute of technology ladkrabang"
         }
       ]
     };
@@ -58,13 +64,13 @@ export default {
       const load1 = _this.$scrollmagic
         .scene({
           triggerElement: this,
-          triggerHook: 0.7,
+          triggerHook: 0.8,
           reverse: false
         })
         .setClassToggle(this, "fade-in")
         .setTween(
           this,
-          1.5,
+          1,
           {
             css: {
               y: -50,
@@ -72,7 +78,7 @@ export default {
             }
           },
           {
-            ease: "power4.easeIn"
+            ease: "power4.easeOut"
           }
         );
 
@@ -82,11 +88,7 @@ export default {
     const scene1 = this.$scrollmagic
       .scene({
         triggerElement: "body",
-
-        // {0,0.5,1} - animations starts from {top,center,end} of window
         triggerHook: 0,
-
-        // Duration of animation
         duration: "100%"
       })
       .setTween(".intro-left", {
@@ -115,6 +117,7 @@ export default {
 
 <style lang="scss" scroped>
 @import "@scss/media";
+@import "@scss/color";
 .intro-component {
   > div {
     margin-top: 150px;
@@ -146,6 +149,18 @@ export default {
       margin-bottom: 100px;
       @include md {
         margin-bottom: 70px;
+      }
+    }
+  }
+
+  .card-highlight {
+    .intro-card {
+      background-color: $yellow1;
+      .card-title {
+        color: $dark1 !important;
+        text-shadow: 0 1px $dark1 !important;
+        -webkit-text-fill-color: none !important;
+        mix-blend-mode: initial;
       }
     }
   }
