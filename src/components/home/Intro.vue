@@ -49,7 +49,7 @@ export default {
           sub:
             "My name is vasin sermsampan  or you can call me `Peach`,  I am 21 years old, studying data science and business analytic at kingmongkutt's Institute of Technology ladkrabang, ",
           text:
-            "Now, I have experience in web Full-Stack area for 3 year, Working freelance in Thailand, accepting work from both domestic and foreign countries, my main skills include Coding / Creative / Art / UX & UI Design and Data Science."
+            "Now, have experience in web Full-Stack area for 3 year, Working freelance in Thailand, accepting work from both domestic and foreign countries, my main skills include Coding / Creative / Art / UX & UI Design and Data Science."
         },
         {
           head: "WELCOME",
@@ -193,12 +193,15 @@ export default {
 
   .card-highlight {
     .intro-card {
-      background-color: rgba($color: $yellow1, $alpha: 0.5);
+      background-color: rgba($color: $yellow1, $alpha: 0.9);
       .card-title {
-        color: $white1 !important;
-        text-shadow: 0 1px $white1 !important;
+        color: $dark1 !important;
+        text-shadow: 0 1px $dark1 !important;
         -webkit-text-fill-color: none !important;
         mix-blend-mode: initial;
+      }
+      .card-sub {
+        margin-bottom: 30px;
       }
     }
   }
