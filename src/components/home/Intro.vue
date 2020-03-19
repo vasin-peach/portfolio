@@ -58,7 +58,7 @@ export default {
       const load1 = _this.$scrollmagic
         .scene({
           triggerElement: this,
-          triggerHook: 0.9,
+          triggerHook: 0.7,
           reverse: false
         })
         .setClassToggle(this, "fade-in")

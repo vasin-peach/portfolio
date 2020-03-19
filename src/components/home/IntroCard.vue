@@ -92,7 +92,7 @@ export default {
     background-image: url("~@images/circle4.png");
     background-clip: text;
     color: $white1;
-    mix-blend-mode: exclusion;
+    mix-blend-mode: color-dodge;
     -webkit-text-fill-color: transparent;
     background-attachment: fixed;
     background-repeat: no-repeat;

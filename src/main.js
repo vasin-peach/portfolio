@@ -6,7 +6,7 @@ import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 // import Scrollbar from "smooth-scrollbar";
 
 Vue.use(VueScrollmagic, {
-  refreshInterval: 0
+  refreshInterval: 100
 });
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
