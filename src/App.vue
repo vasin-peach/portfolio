@@ -6,11 +6,18 @@
 </template>
 
 <script>
+import animate from "@/animate/animate.js";
 // import Menu from "@components/Menu";
 // import Scrollbar from "smooth-scrollbar";
 
 export default {
-  name: "App"
+  name: "App",
+  mounted() {
+    this.$nextTick(function() {
+      console.log("hi");
+      animate(this);
+    });
+  }
   // components: { Menu }
 };
 </script>
