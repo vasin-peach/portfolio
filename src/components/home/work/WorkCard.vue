@@ -1,7 +1,28 @@
 <template>
   <div class="work-card-component">
-    <div class="row m-0 base">
+    <div class="row m-0 dummy-bg">
+      <div class="col base-item d-none d-lg-block" style="background: #313095">
+        <div></div>
+      </div>
+      <div class="col base-item"><div style="background: #3F3EA1"></div></div>
       <div class="col base-item d-none d-lg-block"><div></div></div>
+      <div class="col base-item d-none d-md-block">
+        <div
+          :style="{
+            'background-image':
+              'url(' + require('@images/work/itcamp/bg2.jpg') + ')'
+          }"
+        ></div>
+      </div>
+    </div>
+    <div
+      class="row m-0 base"
+      :style="{
+        'background-image':
+          'url(' + require('@images/work/itcamp/bg1.png') + ')'
+      }"
+    >
+      <div class="col base-item d-none d-lg-block"></div>
       <div class="col base-item">
         <div class="base-detail">
           <div class="base-title">
@@ -10,9 +31,9 @@
             <div></div>
           </div>
           <div class="base-tag row">
-            <div class="col"># Space</div>
-            <div class="col"># Camp</div>
-            <div class="col"># Parallax</div>
+            <div class="col">#Space</div>
+            <div class="col">#Camp</div>
+            <div class="col">#Parallax</div>
           </div>
           <div class="base-color row">
             <div class="">
@@ -33,8 +54,8 @@
           </div>
         </div>
       </div>
-      <div class="col base-item d-none d-lg-block"><div></div></div>
-      <div class="col base-item d-none d-md-block"><div></div></div>
+      <div class="col base-item d-none d-lg-block"></div>
+      <div class="col base-item d-none d-md-block"></div>
     </div>
     <div class="row title">
       <div class="col">
@@ -60,15 +81,52 @@ export default {
   position: relative;
   // background: $dark2;
   color: $white1;
-
-  .base {
+  .dummy-bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    // background: rgba($color: $white1, $alpha: 0.1);
     .base-item {
-      min-height: 60vh;
-      &:nth-child(even) {
-        background: rgba($color: $white1, $alpha: 0.1);
+      padding-left: 0;
+      padding-right: 0;
+      &:nth-child(1) {
+        > div {
+          min-height: 650px;
+          @include sm {
+            min-height: 500px;
+          }
+        }
       }
-      &:nth-child(odd) {
-        background: rgba($color: $dark1, $alpha: 0.1);
+      &:nth-child(2) {
+        > div {
+          min-height: 520px;
+          bottom: 20%;
+          @include sm {
+            display: none;
+          }
+        }
+      }
+      &:nth-child(4) {
+        > div {
+          min-height: 520px;
+          bottom: 20%;
+          background-size: cover;
+        }
+      }
+
+      // min-height: calc(650px - 130px);
+    }
+  }
+  .base {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    .base-item {
+      min-height: 650px;
+      @include sm {
+        min-height: 500px;
+        background-color: rgba($color: $dark1, $alpha: 0.5);
       }
     }
 
@@ -106,7 +164,7 @@ export default {
 
   .title {
     position: absolute;
-    bottom: 0;
+    bottom: 5%;
     left: 0;
     right: 0;
 

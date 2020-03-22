@@ -3,7 +3,7 @@
     <WorkCard />
     <div class="row m-0 work-container">
       <div class="col-12 col-md-6  d-none d-md-block"></div>
-      <div class="col-12 col-md-3 col-md work-menu ">
+      <div class="col-12 col-md-6 col-lg-3 work-menu ">
         MENU
       </div>
       <div class="col-3 d-none d-lg-block">1</div>

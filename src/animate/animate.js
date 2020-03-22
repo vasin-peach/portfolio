@@ -22,9 +22,34 @@ export default function animate(_this) {
           ease: "power4.easeOut"
         }
       );
-    // .addIndicators({ name: "2 (duration: 300)" });
-
     _this.$scrollmagic.addScene(load1);
+  });
+
+  $(".work-card-component").each(function() {
+    const work_bg_sence = _this.$scrollmagic
+      .scene({
+        triggerElement: this,
+        triggerHook: 0,
+        duration: "200%"
+      })
+      .setTween($(this).find(".base"), {
+        backgroundPosition: "100px 0"
+      });
+
+    const work_title_sence = _this.$scrollmagic
+      .scene({
+        triggerElement: this,
+        triggerHook: 0,
+        duration: "200%"
+      })
+      .setTween($(this).find(".title-text"), {
+        y: "-15vh"
+      });
+
+    if ($(window).width() > 992) {
+      _this.$scrollmagic.addScene(work_bg_sence);
+      _this.$scrollmagic.addScene(work_title_sence);
+    }
   });
 
   const scene1 = _this.$scrollmagic
@@ -51,21 +76,11 @@ export default function animate(_this) {
       y: "-30vh"
     });
 
-  const work_title_sence = _this.$scrollmagic
-    .scene({
-      triggerElement: ".work-container",
-      triggerHook: 0,
-      duration: "200%"
-    })
-    .setTween(".title-text", {
-      y: "-15vh"
-    })
-    .addIndicators({ name: "2 (duration: 300)" });
-
   if ($(window).width() > 992) {
     _this.$scrollmagic.addScene(scene1);
     _this.$scrollmagic.addScene(scene2);
-    _this.$scrollmagic.addScene(work_title_sence);
+    // _this.$scrollmagic.addScene(work_title_sence);
+    // _this.$scrollmagic.addScene(work_bg_sence);
   }
 
   let y = 0;
