@@ -167,7 +167,7 @@ export default {
 @import "@scss/media";
 
 .slide-fade-enter-active {
-  transition: all 0.7s ease-in;
+  transition: all 0.3s ease-in;
 }
 .slide-fade-leave-active {
   transition: all 0.3s ease-out;
@@ -179,7 +179,7 @@ export default {
 }
 
 .slide-fade2-enter-active {
-  transition: all 0.7s ease-in;
+  transition: all 0.3s ease-in;
 }
 .slide-fade2-leave-active {
   transition: all 0.3s ease-in;
@@ -266,7 +266,7 @@ export default {
       }
 
       .progress {
-        transition: 1s ease-out;
+        transition: 1s ease-in-out;
         position: relative;
         background: $yellow1;
         height: 20px;
