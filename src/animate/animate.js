@@ -79,31 +79,29 @@ export default function animate(_this) {
   if ($(window).width() > 767) {
     _this.$scrollmagic.addScene(scene1);
     _this.$scrollmagic.addScene(scene2);
-    // _this.$scrollmagic.addScene(work_title_sence);
-    // _this.$scrollmagic.addScene(work_bg_sence);
-  }
 
-  let y = 0;
+    let y = 0;
 
-  let scroll = Scrollbar.init(document.querySelector("#app"), {
-    damping: 0.05,
-    alwaysShowTracks: true
-  });
+    let scroll = Scrollbar.init(document.querySelector("#app"), {
+      damping: 0.03,
+      alwaysShowTracks: true
+    });
 
-  let isChrome =
-    /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+    let isChrome =
+      /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
 
-  // update scrollY if chorme
-  if (isChrome) {
-    _this.$scrollmagic.scrollPos(function() {
-      return y;
+    // update scrollY if chorme
+    if (isChrome) {
+      _this.$scrollmagic.scrollPos(function() {
+        return y;
+      });
+    }
+
+    var scrollmagic = _this.$scrollmagic;
+
+    scroll.addListener(function(status) {
+      y = status.offset.y;
+      scrollmagic.update();
     });
   }
-
-  var scrollmagic = _this.$scrollmagic;
-
-  scroll.addListener(function(status) {
-    y = status.offset.y;
-    scrollmagic.update();
-  });
 }
