@@ -51,9 +51,21 @@ export default function animate(_this) {
       y: "-30vh"
     });
 
+  const work_title_sence = _this.$scrollmagic
+    .scene({
+      triggerElement: ".work-container",
+      triggerHook: 0,
+      duration: "200%"
+    })
+    .setTween(".title-text", {
+      y: "-15vh"
+    })
+    .addIndicators({ name: "2 (duration: 300)" });
+
   if ($(window).width() > 992) {
     _this.$scrollmagic.addScene(scene1);
     _this.$scrollmagic.addScene(scene2);
+    _this.$scrollmagic.addScene(work_title_sence);
   }
 
   let y = 0;

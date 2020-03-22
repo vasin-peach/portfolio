@@ -1,0 +1,15 @@
+.button-ghost {
+  font-weight: bold;
+  border: 3px solid $white1;
+  color: $white1;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.3s ease-out, color 0.3s ease-out;
+  display: block;
+
+  &:hover {
+    background: $white1;
+    color: $dark1;
+  }
+}

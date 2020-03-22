@@ -2,13 +2,13 @@
   <div class="intro-component">
     <div class="row">
       <div
-        class="col-12 col-md-6 intro-left intro-float p-2 pr-sm-3 pr-md-4 pr-lg-5"
+        class="col-12 col-md-6 intro-left intro-float  pr-sm-3 pr-md-4 pr-lg-5"
       >
         <IntroCard :options="introCards[2]" />
         <IntroCard :options="introCards[0]" />
       </div>
       <div
-        class="col-12 col-md-6 intro-right intro-float p-2 pl-sm-3 pl-md-4 pl-lg-5"
+        class="col-12 col-md-6 intro-right intro-float  pl-sm-3 pl-md-4 pl-lg-5"
       >
         <IntroCard :options="introCards[1]" />
         <IntroCard :options="introCards[3]" class="card-highlight" />

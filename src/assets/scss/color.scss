@@ -10,6 +10,7 @@ $dark2: rgb(4, 4, 19);
 $gray1: #696969;
 $gray2: #8B8B8B;
 $blue1: #0836e0;
+$red1: #EF4647;
 
 $colours: "yellow1" #FFC832,
 "yellow2" #FFE08B,
@@ -17,8 +18,11 @@ $colours: "yellow1" #FFC832,
 "white2" #f2f2f2f2,
 "white3" #CBCBCB,
 "dark1" #000,
+"dark2" rgb(4, 4, 19),
 "gray1" #696969,
-"gray2" #8B8B8B;
+"gray2" #8B8B8B,
+"blue1" #0836e0,
+"red1" #EF4647;
 
 @each $i in $colours {
   .bg-#{nth($i, 1)} {
