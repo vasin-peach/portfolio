@@ -20,7 +20,7 @@
 <script>
 import IntroCard from "./IntroCard";
 export default {
-  name: "Intro",
+  name: "IntroComponent",
   components: {
     IntroCard
   },

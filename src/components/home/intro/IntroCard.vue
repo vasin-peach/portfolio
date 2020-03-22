@@ -23,7 +23,7 @@
 
 <script>
 export default {
-  name: "IntroCard",
+  name: "IntroCardComponent",
   props: ["options"]
 };
 </script>

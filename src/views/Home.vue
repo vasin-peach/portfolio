@@ -2,11 +2,11 @@
   <div class="home-container container">
     <Brand />
     <div class="container-wrapper">
-      <div class="">
-        <Intro class="trigger1" />
+      <div class="intro-container">
+        <Intro />
       </div>
-      <div class="h">
-        HI
+      <div class="work-container">
+        <Work />
       </div>
     </div>
   </div>
@@ -14,12 +14,14 @@
 
 <script>
 import Brand from "@components/home/Brand";
-import Intro from "@components/home/Intro";
+import Intro from "@components/home/intro/Intro";
+import Work from "@components/home/work/Work";
 export default {
   name: "Home",
   components: {
     Brand,
-    Intro
+    Intro,
+    Work
   }
 };
 </script>
