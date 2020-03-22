@@ -1,5 +1,5 @@
 <template>
-  <div class="work-component">
+  <div class="work-component fade-in">
     <swiper
       ref="workSwiper"
       class="swiper"

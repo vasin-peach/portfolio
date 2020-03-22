@@ -2,7 +2,7 @@ import Scrollbar from "smooth-scrollbar";
 import $ from "jquery";
 
 export default function animate(_this) {
-  $(".intro-card-component").each(function() {
+  $(".fade-in").each(function() {
     const load1 = _this.$scrollmagic
       .scene({
         triggerElement: this,
@@ -11,7 +11,7 @@ export default function animate(_this) {
       })
       .setTween(
         this,
-        1,
+        2,
         {
           css: {
             y: -50,
@@ -19,7 +19,7 @@ export default function animate(_this) {
           }
         },
         {
-          ease: "power4.easeOut"
+          ease: "Power4.easeInOut"
         }
       );
     _this.$scrollmagic.addScene(load1);

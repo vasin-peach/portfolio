@@ -1,5 +1,5 @@
 <template>
-  <div class="intro-card-component">
+  <div class="intro-card-component fade-in">
     <div class="intro-wrapper">
       <div class="intro-head">
         <span></span>
@@ -32,11 +32,6 @@ export default {
 @import "@scss/color";
 @import "@scss/media";
 .intro-card-component {
-  opacity: 0;
-  // .intro-card > div {
-  //   transform: translate(-50px, 0);
-  //   opacity: 0;
-  // }
 }
 .intro-head {
   display: flex;
