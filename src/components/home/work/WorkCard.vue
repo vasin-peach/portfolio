@@ -45,22 +45,10 @@
               <div v-for="color in options.colors" :key="color">
                 <div class="color-item" :style="{ background: color }"></div>
               </div>
-              <!-- <div class="">
-                <div class="color-item bg-dark2"></div>
-              </div>
-              <div class="">
-                <div class="color-item bg-blue1"></div>
-              </div>
-              <div class="">
-                <div class="color-item bg-red1"></div>
-              </div>
-              <div class="">
-                <div class="color-item bg-white1"></div>
-              </div> -->
             </div>
           </div>
           <div class="base-button">
-            <a href="#" class="button-ghost">VIEW</a>
+            <a :href="options.link" class="button-ghost">VIEW</a>
           </div>
         </div>
       </div>
@@ -69,7 +57,7 @@
     </div>
     <div class="row title">
       <div class="col">
-        <div class="title-text">ITCAMP 14</div>
+        <div class="title-text">{{ options.title }}</div>
       </div>
       <div class="col d-none d-md-block"></div>
     </div>

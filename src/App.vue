@@ -7,8 +7,7 @@
 
 <script>
 import animate from "@/animate/animate.js";
-// import Menu from "@components/Menu";
-// import Scrollbar from "smooth-scrollbar";
+import "swiper/css/swiper.css";
 
 export default {
   name: "App",
@@ -32,6 +31,7 @@ export default {
 @import "@scss/font";
 @import "@scss/color";
 @import "@scss/bootstrap";
+@import "@scss/swiper";
 @import "@scss/smooth_scroll";
 
 html,
