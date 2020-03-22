@@ -135,7 +135,7 @@ export default {
     .base-item {
       min-height: 650px;
       @include sm {
-        min-height: 400px;
+        min-height: 500px;
         background-color: rgba($color: $dark1, $alpha: 0.5);
       }
     }
@@ -182,10 +182,6 @@ export default {
 
     @include md {
       bottom: 10%;
-    }
-
-    @include sm {
-      bottom: 5%;
     }
 
     .title-text {
