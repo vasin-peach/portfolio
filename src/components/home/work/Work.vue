@@ -1,6 +1,6 @@
 <template>
   <div class="work-component">
-    <WorkCard />
+    <WorkCard :options="works[0]" />
     <div class="row m-0 work-container">
       <div class="col-12 col-md-6  d-none d-md-block"></div>
       <div class="col-12 col-md-6 col-lg-3 work-menu ">
@@ -15,7 +15,33 @@
 import WorkCard from "./WorkCard";
 export default {
   name: "WorkComponent",
-  components: { WorkCard }
+  components: { WorkCard },
+  data() {
+    return {
+      works: [
+        {
+          title: "ITCAMP 14",
+          link: "itcamp14",
+          desc: "GETTING TO KNOW 'IT' CHOOSE THE PATH TO UNIVERSITY",
+          tags: [
+            "#Space",
+            "#Camp",
+            "#Parallax",
+            "#Space",
+            "#Camp",
+            "#Parallax"
+          ],
+          colors: ["#040413", "#0836e0", "#EF4647", "#ffffff"],
+          bg: {
+            base: require("@images/work/itcamp/bg1.png"),
+            mask1: "#313095",
+            mask2: "#3F3EA1",
+            mask3: require("@images/work/itcamp/bg2.jpg")
+          }
+        }
+      ]
+    };
+  }
 };
 </script>
 

@@ -1,16 +1,20 @@
 <template>
   <div class="work-card-component">
     <div class="row m-0 dummy-bg">
-      <div class="col base-item d-none d-lg-block" style="background: #313095">
+      <div
+        class="col base-item d-none d-lg-block"
+        :style="{ background: options.bg.mask1 }"
+      >
         <div></div>
       </div>
-      <div class="col base-item"><div style="background: #3F3EA1"></div></div>
+      <div class="col base-item">
+        <div :style="{ background: options.bg.mask2 }"></div>
+      </div>
       <div class="col base-item d-none d-lg-block"><div></div></div>
       <div class="col base-item d-none d-md-block">
         <div
           :style="{
-            'background-image':
-              'url(' + require('@images/work/itcamp/bg2.jpg') + ')'
+            'background-image': 'url(' + options.bg.mask3 + ')'
           }"
         ></div>
       </div>
@@ -18,8 +22,7 @@
     <div
       class="row m-0 base"
       :style="{
-        'background-image':
-          'url(' + require('@images/work/itcamp/bg1.png') + ')'
+        'background-image': 'url(' + options.bg.base + ')'
       }"
     >
       <div class="col base-item d-none d-lg-block"></div>
@@ -27,26 +30,33 @@
         <div class="base-detail">
           <div class="base-title">
             <div></div>
-            <p>GETTING TO KNOW "IT" CHOOSE THE PATH TO UNIVERSITY</p>
+            <p>{{ options.desc }}</p>
             <div></div>
           </div>
           <div class="base-tag row">
-            <div class="col">#Space</div>
-            <div class="col">#Camp</div>
-            <div class="col">#Parallax</div>
+            <div class="col d-flex flex-row flex-wrap">
+              <div v-for="tag in options.tags" :key="tag">
+                {{ tag }}
+              </div>
+            </div>
           </div>
           <div class="base-color row">
-            <div class="">
-              <div class="color-item bg-dark2"></div>
-            </div>
-            <div class="">
-              <div class="color-item bg-blue1"></div>
-            </div>
-            <div class="">
-              <div class="color-item bg-red1"></div>
-            </div>
-            <div class="">
-              <div class="color-item bg-white1"></div>
+            <div class="col d-flex flex-row flex-wrap">
+              <div v-for="color in options.colors" :key="color">
+                <div class="color-item" :style="{ background: color }"></div>
+              </div>
+              <!-- <div class="">
+                <div class="color-item bg-dark2"></div>
+              </div>
+              <div class="">
+                <div class="color-item bg-blue1"></div>
+              </div>
+              <div class="">
+                <div class="color-item bg-red1"></div>
+              </div>
+              <div class="">
+                <div class="color-item bg-white1"></div>
+              </div> -->
             </div>
           </div>
           <div class="base-button">
@@ -94,7 +104,7 @@ export default {
         > div {
           min-height: 650px;
           @include sm {
-            min-height: 500px;
+            min-height: 400px;
           }
         }
       }
@@ -125,7 +135,7 @@ export default {
     .base-item {
       min-height: 650px;
       @include sm {
-        min-height: 500px;
+        min-height: 400px;
         background-color: rgba($color: $dark1, $alpha: 0.5);
       }
     }
@@ -147,17 +157,19 @@ export default {
     .base-tag {
       margin-top: 1rem;
       margin-bottom: 2rem;
+      > div > div {
+        margin: 0 5px;
+      }
     }
 
     .base-color {
       margin-bottom: 2rem;
-      > div {
-        margin: 0 10px;
-      }
       .color-item {
         width: 20px;
         height: 20px;
         border-radius: 50%;
+        margin: 0 5px;
+        margin-bottom: 10px;
       }
     }
   }
@@ -170,6 +182,10 @@ export default {
 
     @include md {
       bottom: 10%;
+    }
+
+    @include sm {
+      bottom: 5%;
     }
 
     .title-text {

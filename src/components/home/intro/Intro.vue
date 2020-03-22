@@ -2,7 +2,7 @@
   <div class="intro-component">
     <div class="row">
       <div
-        class="col-12 col-md-6 intro-left intro-float  pr-sm-3 pr-md-4 pr-lg-5"
+        class="col-12 col-md-6 intro-left intro-float  pr-sm-3 pr-md-4 pr-lg-5 d-none d-md-block"
       >
         <IntroCard :options="introCards[2]" />
         <IntroCard :options="introCards[0]" />

@@ -76,7 +76,7 @@ export default function animate(_this) {
       y: "-30vh"
     });
 
-  if ($(window).width() > 992) {
+  if ($(window).width() > 767) {
     _this.$scrollmagic.addScene(scene1);
     _this.$scrollmagic.addScene(scene2);
     // _this.$scrollmagic.addScene(work_title_sence);
