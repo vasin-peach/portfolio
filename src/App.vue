@@ -14,7 +14,6 @@ export default {
   name: "App",
   mounted() {
     this.$nextTick(function() {
-      console.log("hi");
       animate(this);
     });
   }
