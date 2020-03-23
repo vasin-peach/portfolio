@@ -90,7 +90,10 @@ export default {
           link: "itcamp14",
           desc: "GETTING TO KNOW 'IT' CHOOSE THE PATH TO UNIVERSITY",
           tags: ["#Space", "#Camp", "#Parallax"],
+          textColor: "#fff",
+          titleColor: "#fff",
           colors: ["#040413", "#0836e0", "#EF4647", "#ffffff"],
+          button: "#fff",
           bg: {
             base: require("@images/work/itcamp/bg1.png"),
             mask1: "#313095",
@@ -99,16 +102,20 @@ export default {
           }
         },
         {
-          title: "ITCAMP 15",
-          link: "itcamp14",
-          desc: "GETTING TO KNOW 'IT' CHOOSE THE PATH TO UNIVERSITY",
-          tags: ["#Space", "#Camp", "#Parallax"],
-          colors: ["#040413", "#0836e0", "#EF4647", "#ffffff"],
+          title: "S&N CURTAIN",
+          link: "sn-curtain",
+          desc:
+            "ONLINE CURTAIN SALES SITE. SUPPORT PRODUCT MANAGEMENT, CARD PAYMENT, CONTENT MANAGEMENT.",
+          tags: ["#Minimal", "#E-Commerce", "Credit-Payment"],
+          textColor: "#000",
+          titleColor: "#FFB42A",
+          colors: ["#F4EB9C", "#25AAE1", "#E2556F", "#D9D9D9"],
+          button: "#000",
           bg: {
-            base: require("@images/work/itcamp/bg1.png"),
-            mask1: "#313095",
-            mask2: "#3F3EA1",
-            mask3: require("@images/work/itcamp/bg2.jpg")
+            base: require("@images/work/sn-curtain/bg1.png"),
+            mask1: "#36334A",
+            mask2: "#FFFFFF",
+            mask3: require("@images/work/sn-curtain/bg2.jpg")
           }
         },
         {
@@ -118,10 +125,10 @@ export default {
           tags: ["#Space", "#Camp", "#Parallax"],
           colors: ["#040413", "#0836e0", "#EF4647", "#ffffff"],
           bg: {
-            base: require("@images/work/itcamp/bg1.png"),
+            base: require("@images/work/sn-curtain/bg1.png"),
             mask1: "#313095",
             mask2: "#3F3EA1",
-            mask3: require("@images/work/itcamp/bg2.jpg")
+            mask3: require("@images/work/sn-curtain/bg2.jpg")
           }
         }
       ],

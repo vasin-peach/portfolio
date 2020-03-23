@@ -27,7 +27,7 @@
     >
       <div class="col base-item d-none d-lg-block"></div>
       <div class="col base-item">
-        <div class="base-detail">
+        <div class="base-detail" :style="{ color: options.textColor }">
           <div class="base-title">
             <div></div>
             <p>{{ options.desc }}</p>
@@ -48,7 +48,12 @@
             </div>
           </div>
           <div class="base-button">
-            <a :href="options.link" class="button-ghost">VIEW</a>
+            <a
+              :href="options.link"
+              class="button-ghost"
+              :style="{ 'border-color': options.button, color: options.button }"
+              >VIEW</a
+            >
           </div>
         </div>
       </div>
@@ -57,7 +62,9 @@
     </div>
     <div class="row title">
       <div class="col">
-        <div class="title-text">{{ options.title }}</div>
+        <div class="title-text" :style="{ color: options.titleColor }">
+          {{ options.title }}
+        </div>
       </div>
       <div class="col d-none d-md-block"></div>
     </div>
@@ -84,7 +91,6 @@ export default {
     left: 0;
     right: 0;
     bottom: 0;
-    // background: rgba($color: $white1, $alpha: 0.1);
     .base-item {
       padding-left: 0;
       padding-right: 0;
@@ -110,6 +116,7 @@ export default {
           min-height: 520px;
           bottom: 20%;
           background-size: cover;
+          background-repeat: no-repeat;
         }
       }
 
