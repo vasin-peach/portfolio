@@ -15,6 +15,9 @@ export default {
     this.$nextTick(function() {
       animate(this);
     });
+  },
+  updated() {
+    console.log("update");
   }
   // components: { Menu }
 };

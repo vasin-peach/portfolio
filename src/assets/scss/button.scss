@@ -12,4 +12,13 @@
     background: $white1;
     color: $dark1;
   }
+
+  &.dark {
+    color: $dark1;
+    border-color: $dark1;
+    &:hover {
+      background: $dark1;
+      color: $white1;
+    }
+  }
 }

@@ -51,7 +51,7 @@
             <a
               :href="options.link"
               class="button-ghost"
-              :style="{ 'border-color': options.button, color: options.button }"
+              :class="{ dark: options.button == 'dark' }"
               >VIEW</a
             >
           </div>

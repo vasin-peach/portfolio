@@ -80,7 +80,6 @@ export default {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev"
         },
-        mousewheel: true,
         keyboard: true,
         speed: 1000
       },
@@ -89,11 +88,11 @@ export default {
           title: "ITCAMP 14",
           link: "itcamp14",
           desc: "GETTING TO KNOW 'IT' CHOOSE THE PATH TO UNIVERSITY",
-          tags: ["#Space", "#Camp", "#Parallax"],
+          tags: ["#Vue", "#Vuex", "#Parallax", "#Cookie Session"],
           textColor: "#fff",
           titleColor: "#fff",
+          button: "white",
           colors: ["#040413", "#0836e0", "#EF4647", "#ffffff"],
-          button: "#fff",
           bg: {
             base: require("@images/work/itcamp/bg1.png"),
             mask1: "#313095",
@@ -102,15 +101,75 @@ export default {
           }
         },
         {
+          title: "SCAPPER",
+          link: "linkedin-scaper",
+          desc: "LINKEDIN PROFILE SCRAPER USE SELENIUM TO EXTRACT USER URL",
+          tags: ["#Vue", "#Vuex", "#Express", "JWT", "Docker"],
+          textColor: "#fff",
+          titleColor: "#fff",
+          button: "white",
+          colors: ["#0077B5", "#283E4A", "#f2f2f2"],
+          bg: {
+            base: require("@images/work/scraper/bg1.gif"),
+            mask1: "#0077B5",
+            mask2: "#283E4A",
+            mask3: ""
+          }
+        },
+        {
+          title: "FUJIMAKI",
+          link: "fujimaki",
+          desc:
+            "'FUJIAMI STEEL THAILAND' A MANUFACTURER OF CUSTOM PLATES FOR ALL TYPES OF SPECIAL STEEL AND NON-FERROUS METAL",
+          tags: ["#Vue"],
+          textColor: "#000",
+          titleColor: "#EB2227",
+          button: "dark",
+          colors: ["#272727", "#EB2227", "#f2f2f2"],
+          bg: {
+            base: require("@images/work/fujimaki/bg1.png"),
+            mask1: "#272727",
+            mask2: "#fff",
+            mask3: require("@images/work/fujimaki/bg2.jpg")
+          }
+        },
+        {
+          title: "HUAHEDKROB",
+          link: "huahedkrob",
+          desc:
+            "'MAYANAKARN' INTRODUCED THE NEW CHOICE FOR HEALTHY SNACKS TO THE MARKET.",
+          tags: ["#Vue"],
+          textColor: "#000",
+          titleColor: "#FE9B3C",
+          button: "dark",
+          colors: ["#0F0F0F", "#FE9B3C", "#486A48", "#f2f2f2"],
+          bg: {
+            base: require("@images/work/huahedkrob/bg1.jpg"),
+            mask1: "#0F0F0F",
+            mask2: "#fff",
+            mask3: require("@images/work/huahedkrob/bg2.jpg")
+          }
+        },
+        {
           title: "S&N CURTAIN",
           link: "sn-curtain",
           desc:
             "ONLINE CURTAIN SALES SITE. SUPPORT PRODUCT MANAGEMENT, CARD PAYMENT, CONTENT MANAGEMENT.",
-          tags: ["#Minimal", "#E-Commerce", "Credit-Payment"],
+          tags: [
+            "#Vue",
+            "#Vuex",
+            "#Omise",
+            "#Express",
+            "#Socket.io",
+            "#JWT",
+            "#GCP",
+            "#CI/CD (Gitlab)",
+            "#Docker"
+          ],
           textColor: "#000",
           titleColor: "#FFB42A",
+          button: "dark",
           colors: ["#F4EB9C", "#25AAE1", "#E2556F", "#D9D9D9"],
-          button: "#000",
           bg: {
             base: require("@images/work/sn-curtain/bg1.png"),
             mask1: "#36334A",
@@ -119,16 +178,38 @@ export default {
           }
         },
         {
-          title: "ITCAMP 16",
-          link: "itcamp14",
-          desc: "GETTING TO KNOW 'IT' CHOOSE THE PATH TO UNIVERSITY",
-          tags: ["#Space", "#Camp", "#Parallax"],
-          colors: ["#040413", "#0836e0", "#EF4647", "#ffffff"],
+          title: "<LONGCODE>",
+          link: "longcode",
+          desc:
+            "SITE FOR PRACTICE PYTHON LANGUAGE IT CONSISTS OF EXERCISES THAT THE TEACHER CAN ADD BY HIMSELF.",
+          tags: ["#Flask", "#Python", "#Vue", "#Vuex", "#JWT"],
+          textColor: "#fff",
+          titleColor: "#EB481B",
+          button: "white",
+          colors: ["#263237", "#EB481B", "#4C579E", "#f2f2f2"],
           bg: {
-            base: require("@images/work/sn-curtain/bg1.png"),
-            mask1: "#313095",
-            mask2: "#3F3EA1",
-            mask3: require("@images/work/sn-curtain/bg2.jpg")
+            base: require("@images/work/longcode/bg1.jpg"),
+            mask1: "#17121E",
+            mask2: "#312931",
+            mask3: require("@images/work/longcode/bg2.jpg")
+          }
+        },
+
+        {
+          title: "NBR CLUB",
+          link: "studentclub",
+          desc:
+            "ONLINE CLUB REGISTRATION WEBSITE FOR NAWAMINTHRACHINUTHIT BENJAMARACHALAI SCHOOL",
+          tags: ["#Vue", "#Vuex", "#Express", "JWT", "Docker"],
+          textColor: "#000",
+          titleColor: "#842B2D",
+          button: "dark",
+          colors: ["#5B7E70", "#842B2D", "#3E486B", "#f2f2f2"],
+          bg: {
+            base: require("@images/work/studentclub/bg1.png"),
+            mask1: "#E4E4E4",
+            mask2: "#fff",
+            mask3: require("@images/work/studentclub/bg2.jpg")
           }
         }
       ],
