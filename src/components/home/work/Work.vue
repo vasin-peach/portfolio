@@ -79,7 +79,10 @@ export default {
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev"
-        }
+        },
+        mousewheel: true,
+        keyboard: true,
+        speed: 1000
       },
       works: [
         {
