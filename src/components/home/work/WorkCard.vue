@@ -27,7 +27,12 @@
     >
       <div class="col base-item d-none d-lg-block"></div>
       <div class="col base-item">
-        <div class="base-detail" :style="{ color: options.textColor }">
+        <div
+          class="base-detail"
+          :style="{
+            color: width > 767 ? options.textColor : '#fff'
+          }"
+        >
           <div class="base-title">
             <div></div>
             <p>{{ options.desc }}</p>
@@ -51,7 +56,7 @@
             <a
               :href="options.link"
               class="button-ghost"
-              :class="{ dark: options.button == 'dark' }"
+              :class="{ dark: options.button == 'dark' && width > 767 }"
               >VIEW</a
             >
           </div>
@@ -72,9 +77,15 @@
 </template>
 
 <script>
+import $ from "jquery";
 export default {
   name: "WorkCardComponent",
-  props: ["options"]
+  props: ["options"],
+  data() {
+    return {
+      width: $(window).width()
+    };
+  }
 };
 </script>
 
@@ -186,6 +197,9 @@ export default {
 
       @include md {
         font-size: 50px;
+      }
+      @include sm {
+        font-size: 35px;
       }
     }
   }
