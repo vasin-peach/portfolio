@@ -171,7 +171,7 @@ export default {
           button: "dark",
           colors: ["#F4EB9C", "#25AAE1", "#E2556F", "#D9D9D9"],
           bg: {
-            base: require("@images/work/sn-curtain/bg1.png"),
+            base: require("@images/work/sn-curtain/bg1.jpg"),
             mask1: "#36334A",
             mask2: "#FFFFFF",
             mask3: require("@images/work/sn-curtain/bg2.jpg")
@@ -202,12 +202,12 @@ export default {
             "ONLINE CLUB REGISTRATION WEBSITE FOR NAWAMINTHRACHINUTHIT BENJAMARACHALAI SCHOOL",
           tags: ["#Vue", "#Vuex", "#Express", "JWT", "Docker"],
           textColor: "#000",
-          titleColor: "#842B2D",
+          titleColor: "#FFB42A",
           button: "dark",
-          colors: ["#5B7E70", "#842B2D", "#3E486B", "#f2f2f2"],
+          colors: ["#FFB42A", "#842B2D", "#3E486B", "#f2f2f2"],
           bg: {
             base: require("@images/work/studentclub/bg1.png"),
-            mask1: "#E4E4E4",
+            mask1: "#842B2D",
             mask2: "#fff",
             mask3: require("@images/work/studentclub/bg2.jpg")
           }
