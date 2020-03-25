@@ -1,24 +1,19 @@
-# vasin-portfolio
+[![Netlify Status](https://api.netlify.com/api/v1/badges/281d97cd-4e90-4667-b988-eb0f9bf83a19/deploy-status)](https://app.netlify.com/sites/vasin-portfolio/deploys)
 
-## Project setup
-```
-yarn install
-```
+# Vasin Portfolio
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+![example](./preview/preview.jpg)
 
-### Compiles and minifies for production
-```
-yarn build
-```
 
-### Lints and fixes files
-```
-yarn lint
-```
+### Tech
+* [Vue.js]
+* [GSAP]
+* [SrollMagic]
+* [Swiper]
+* [Bootstrap]
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+License
+----
+
+MIT
