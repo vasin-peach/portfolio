@@ -55,6 +55,7 @@
           <div class="base-button">
             <a
               :href="options.link"
+              target="_blank"
               class="button-ghost"
               :class="{ dark: options.button == 'dark' && width > 767 }"
               >VIEW</a

@@ -50,7 +50,7 @@
               >
                 PREV
               </div>
-              <a :href="menu.data.link" class="col">VIEW</a>
+              <a :href="menu.data.link" target="_blank" class="col">VIEW</a>
 
               <div
                 class="col"
@@ -86,7 +86,7 @@ export default {
       works: [
         {
           title: "ITCAMP 14",
-          link: "itcamp14",
+          link: "https://itcamp14.netlify.com/",
           desc: "GETTING TO KNOW 'IT' CHOOSE THE PATH TO UNIVERSITY",
           tags: ["#Vue", "#Vuex", "#Parallax", "#Cookie Session"],
           textColor: "#fff",
@@ -102,7 +102,7 @@ export default {
         },
         {
           title: "SCAPPER",
-          link: "linkedin-scaper",
+          link: "https://github.com/vasin-peach/linkedin-profile-scraper",
           desc: "LINKEDIN PROFILE SCRAPER USE SELENIUM TO EXTRACT USER URL",
           tags: ["#Vue", "#Vuex", "#Express", "JWT", "Docker"],
           textColor: "#fff",
@@ -118,7 +118,7 @@ export default {
         },
         {
           title: "FUJIMAKI",
-          link: "fujimaki",
+          link: "http://www.fujimaki.co.th/",
           desc:
             "'FUJIAMI STEEL THAILAND' A MANUFACTURER OF CUSTOM PLATES FOR ALL TYPES OF SPECIAL STEEL AND NON-FERROUS METAL",
           tags: ["#Vue"],
@@ -135,7 +135,7 @@ export default {
         },
         {
           title: "HUAHEDKROB",
-          link: "huahedkrob",
+          link: "http://mayanakarn.com/",
           desc:
             "'MAYANAKARN' INTRODUCED THE NEW CHOICE FOR HEALTHY SNACKS TO THE MARKET.",
           tags: ["#Vue"],
@@ -152,7 +152,7 @@ export default {
         },
         {
           title: "S&N CURTAIN",
-          link: "sn-curtain",
+          link: "https://sn-curtain.netlify.com/",
           desc:
             "ONLINE CURTAIN SALES SITE. SUPPORT PRODUCT MANAGEMENT, CARD PAYMENT, CONTENT MANAGEMENT.",
           tags: [
@@ -179,7 +179,7 @@ export default {
         },
         {
           title: "<LONGCODE>",
-          link: "longcode",
+          link: "http://longcode.netlify.com/",
           desc:
             "SITE FOR PRACTICE PYTHON LANGUAGE IT CONSISTS OF EXERCISES THAT THE TEACHER CAN ADD BY HIMSELF.",
           tags: ["#Flask", "#Python", "#Vue", "#Vuex", "#JWT"],
@@ -197,7 +197,7 @@ export default {
 
         {
           title: "NBR CLUB",
-          link: "studentclub",
+          link: "https://studentclub.netlify.com/",
           desc:
             "ONLINE CLUB REGISTRATION WEBSITE FOR NAWAMINTHRACHINUTHIT BENJAMARACHALAI SCHOOL",
           tags: ["#Vue", "#Vuex", "#Express", "JWT", "Docker"],
