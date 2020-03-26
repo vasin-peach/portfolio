@@ -103,7 +103,8 @@ export default {
         {
           title: "SCAPPER",
           link: "https://github.com/vasin-peach/linkedin-profile-scraper",
-          desc: "LINKEDIN PROFILE SCRAPER USE SELENIUM TO EXTRACT USER URL",
+          desc:
+            "LINKEDIN PROFILE SCRAPER USE SELENIUM TO EXTRACT USER DATA INCLUDE [SKILL, EDUCATION, WORK POSITION, COMMON DATA]",
           tags: ["#Python", "#Selenium", "#BeautifulSoup"],
           textColor: "#fff",
           titleColor: "#fff",
