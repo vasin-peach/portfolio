@@ -88,7 +88,7 @@ export default {
           title: "ITCAMP 14",
           link: "https://itcamp14.netlify.com/",
           desc: "GETTING TO KNOW 'IT' CHOOSE THE PATH TO UNIVERSITY",
-          tags: ["#Vue", "#Vuex", "Scss", "Webpack", "#Parallax"],
+          tags: ["#Vue", "#Vuex", "#Scss", "#Webpack", "#Parallax"],
           textColor: "#fff",
           titleColor: "#fff",
           button: "white",
@@ -122,7 +122,7 @@ export default {
           link: "http://www.fujimaki.co.th/",
           desc:
             "'FUJIAMI STEEL THAILAND' A MANUFACTURER OF CUSTOM PLATES FOR ALL TYPES OF SPECIAL STEEL AND NON-FERROUS METAL",
-          tags: ["#Vue", "Scss", "Webpack"],
+          tags: ["#Vue", "#Scss", "#Webpack"],
           textColor: "#000",
           titleColor: "#EB2227",
           button: "dark",
@@ -139,7 +139,7 @@ export default {
           link: "http://mayanakarn.com/",
           desc:
             "'MAYANAKARN' INTRODUCED THE NEW CHOICE FOR HEALTHY SNACKS TO THE MARKET.",
-          tags: ["#Vue", "Scss", "Webpack"],
+          tags: ["#Vue", "#Scss", "#Webpack"],
           textColor: "#000",
           titleColor: "#FE9B3C",
           button: "dark",
@@ -159,8 +159,8 @@ export default {
           tags: [
             "#Vue",
             "#Vuex",
-            "Scss",
-            "Webpack",
+            "#Scss",
+            "#Webpack",
             "#Omise",
             "#Express",
             "#Socket.io",
@@ -191,8 +191,8 @@ export default {
             "#Python",
             "#Vue",
             "#Vuex",
-            "Scss",
-            "Webpack",
+            "#Scss",
+            "#Webpack",
             "#JWT"
           ],
           textColor: "#fff",
@@ -215,8 +215,8 @@ export default {
           tags: [
             "#Vue",
             "#Vuex",
-            "Scss",
-            "Webpack",
+            "#Scss",
+            "#Webpack",
             "#Express",
             "JWT",
             "Docker"
