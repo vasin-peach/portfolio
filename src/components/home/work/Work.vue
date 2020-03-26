@@ -88,7 +88,7 @@ export default {
           title: "ITCAMP 14",
           link: "https://itcamp14.netlify.com/",
           desc: "GETTING TO KNOW 'IT' CHOOSE THE PATH TO UNIVERSITY",
-          tags: ["#Vue", "#Vuex", "#Parallax", "#Cookie Session"],
+          tags: ["#Vue", "#Vuex", "Scss", "Webpack", "#Parallax"],
           textColor: "#fff",
           titleColor: "#fff",
           button: "white",
@@ -104,7 +104,7 @@ export default {
           title: "SCAPPER",
           link: "https://github.com/vasin-peach/linkedin-profile-scraper",
           desc: "LINKEDIN PROFILE SCRAPER USE SELENIUM TO EXTRACT USER URL",
-          tags: ["#Vue", "#Vuex", "#Express", "JWT", "Docker"],
+          tags: ["#Python", "#Selenium", "#BeautifulSoup"],
           textColor: "#fff",
           titleColor: "#fff",
           button: "white",
@@ -121,7 +121,7 @@ export default {
           link: "http://www.fujimaki.co.th/",
           desc:
             "'FUJIAMI STEEL THAILAND' A MANUFACTURER OF CUSTOM PLATES FOR ALL TYPES OF SPECIAL STEEL AND NON-FERROUS METAL",
-          tags: ["#Vue"],
+          tags: ["#Vue", "Scss", "Webpack"],
           textColor: "#000",
           titleColor: "#EB2227",
           button: "dark",
@@ -138,7 +138,7 @@ export default {
           link: "http://mayanakarn.com/",
           desc:
             "'MAYANAKARN' INTRODUCED THE NEW CHOICE FOR HEALTHY SNACKS TO THE MARKET.",
-          tags: ["#Vue"],
+          tags: ["#Vue", "Scss", "Webpack"],
           textColor: "#000",
           titleColor: "#FE9B3C",
           button: "dark",
@@ -158,13 +158,16 @@ export default {
           tags: [
             "#Vue",
             "#Vuex",
+            "Scss",
+            "Webpack",
             "#Omise",
             "#Express",
             "#Socket.io",
             "#JWT",
             "#GCP",
             "#CI/CD (Gitlab)",
-            "#Docker"
+            "#Docker",
+            "#MongoDB"
           ],
           textColor: "#000",
           titleColor: "#FFB42A",
@@ -182,7 +185,15 @@ export default {
           link: "http://longcode.netlify.com/",
           desc:
             "SITE FOR PRACTICE PYTHON LANGUAGE IT CONSISTS OF EXERCISES THAT THE TEACHER CAN ADD BY HIMSELF.",
-          tags: ["#Flask", "#Python", "#Vue", "#Vuex", "#JWT"],
+          tags: [
+            "#Flask",
+            "#Python",
+            "#Vue",
+            "#Vuex",
+            "Scss",
+            "Webpack",
+            "#JWT"
+          ],
           textColor: "#fff",
           titleColor: "#EB481B",
           button: "white",
@@ -200,7 +211,15 @@ export default {
           link: "https://studentclub.netlify.com/",
           desc:
             "ONLINE CLUB REGISTRATION WEBSITE FOR NAWAMINTHRACHINUTHIT BENJAMARACHALAI SCHOOL",
-          tags: ["#Vue", "#Vuex", "#Express", "JWT", "Docker"],
+          tags: [
+            "#Vue",
+            "#Vuex",
+            "Scss",
+            "Webpack",
+            "#Express",
+            "JWT",
+            "Docker"
+          ],
           textColor: "#000",
           titleColor: "#FFB42A",
           button: "dark",
