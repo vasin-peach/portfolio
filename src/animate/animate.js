@@ -1,12 +1,14 @@
 import Scrollbar from "smooth-scrollbar";
 import $ from "jquery";
 
+let baseTrigger = $(window).width() > 767 ? 0.6 : 0.8;
+
 export default function animate(_this) {
   $(".fade-in").each(function() {
     const load1 = _this.$scrollmagic
       .scene({
         triggerElement: this,
-        triggerHook: 0.6,
+        triggerHook: baseTrigger,
         reverse: false
       })
       .setTween(
