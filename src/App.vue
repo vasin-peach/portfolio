@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <!-- <Menu /> -->
     <router-view />
   </div>
 </template>
@@ -21,18 +20,13 @@ export default {
 </script>
 
 <style lang="scss">
-// bootstrap
-@import "~bootstrap";
-@import "~bootstrap-vue";
-
-// @import url("https://fonts.googleapis.com/css?family=Baloo+2:400,700&display=swap");
-// @import url("https://fonts.googleapis.com/css?family=Sen:400,700&display=swapp");
 @import "@scss/media";
-@import "@scss/font";
 @import "@scss/color";
 @import "@scss/bootstrap";
 @import "@scss/swiper";
 @import "@scss/smooth_scroll";
+@import "~bootstrap";
+@import "~bootstrap-vue";
 
 html,
 body {

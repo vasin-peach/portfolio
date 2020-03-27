@@ -5,6 +5,8 @@ import VueScrollmagic from "vue-scrollmagic";
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 import VueAwesomeSwiper from "vue-awesome-swiper";
 
+import "./assets/scss/font.scss";
+
 Vue.use(VueAwesomeSwiper);
 Vue.use(VueScrollmagic, {
   refreshInterval: 10
