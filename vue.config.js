@@ -21,6 +21,6 @@ module.exports = {
 
     // compress
     config.plugin("CompressionPlugin").use(CompressionPlugin);
-    config.plugin("BundleAnalyzerPlugin").use(BundleAnalyzerPlugin);
+    // config.plugin("BundleAnalyzerPlugin").use(BundleAnalyzerPlugin);
   }
 };
