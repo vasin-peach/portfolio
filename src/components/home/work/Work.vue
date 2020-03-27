@@ -111,7 +111,7 @@ export default {
           button: "white",
           colors: ["#0077B5", "#283E4A", "#f2f2f2"],
           bg: {
-            base: require("@images/work/scraper/bg1.gif"),
+            base: require("@images/work/scraper/bg1.jpg"),
             mask1: "#0077B5",
             mask2: "#283E4A",
             mask3: ""
