@@ -4,7 +4,9 @@ import router from "./router";
 import VueScrollmagic from "vue-scrollmagic";
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 import VueAwesomeSwiper from "vue-awesome-swiper";
+import WebpPlugun from "vue-webp-plugin";
 
+Vue.use(WebpPlugun);
 Vue.use(VueAwesomeSwiper);
 Vue.use(VueScrollmagic, {
   refreshInterval: 10

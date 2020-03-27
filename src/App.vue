@@ -6,6 +6,7 @@
 
 <script>
 import animate from "@/animate/animate.js";
+// import "@/webp.js";
 import "swiper/css/swiper.css";
 
 export default {

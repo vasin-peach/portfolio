@@ -94,10 +94,10 @@ export default {
           button: "white",
           colors: ["#040413", "#0836e0", "#EF4647", "#ffffff"],
           bg: {
-            base: require("@images/work/itcamp/bg1.png"),
+            base: require("@images/work/itcamp/bg1.webp"),
             mask1: "#313095",
             mask2: "#3F3EA1",
-            mask3: require("@images/work/itcamp/bg2.jpg")
+            mask3: require("@images/work/itcamp/bg2.webp")
           }
         },
         {
@@ -111,7 +111,7 @@ export default {
           button: "white",
           colors: ["#0077B5", "#283E4A", "#f2f2f2"],
           bg: {
-            base: require("@images/work/scraper/bg1.jpg"),
+            base: require("@images/work/scraper/bg1.webp"),
             mask1: "#0077B5",
             mask2: "#283E4A",
             mask3: ""
@@ -128,10 +128,10 @@ export default {
           button: "dark",
           colors: ["#272727", "#EB2227", "#f2f2f2"],
           bg: {
-            base: require("@images/work/fujimaki/bg1.png"),
+            base: require("@images/work/fujimaki/bg1.webp"),
             mask1: "#272727",
             mask2: "#fff",
-            mask3: require("@images/work/fujimaki/bg2.jpg")
+            mask3: require("@images/work/fujimaki/bg2.webp")
           }
         },
         {
@@ -145,10 +145,10 @@ export default {
           button: "dark",
           colors: ["#0F0F0F", "#FE9B3C", "#486A48", "#f2f2f2"],
           bg: {
-            base: require("@images/work/huahedkrob/bg1.jpg"),
+            base: require("@images/work/huahedkrob/bg1.webp"),
             mask1: "#0F0F0F",
             mask2: "#fff",
-            mask3: require("@images/work/huahedkrob/bg2.jpg")
+            mask3: require("@images/work/huahedkrob/bg2.webp")
           }
         },
         {
@@ -175,10 +175,10 @@ export default {
           button: "dark",
           colors: ["#F4EB9C", "#25AAE1", "#E2556F", "#D9D9D9"],
           bg: {
-            base: require("@images/work/sn-curtain/bg1.jpg"),
+            base: require("@images/work/sn-curtain/bg1.webp"),
             mask1: "#36334A",
             mask2: "#FFFFFF",
-            mask3: require("@images/work/sn-curtain/bg2.jpg")
+            mask3: require("@images/work/sn-curtain/bg2.webp")
           }
         },
         {
@@ -200,10 +200,10 @@ export default {
           button: "white",
           colors: ["#263237", "#EB481B", "#4C579E", "#f2f2f2"],
           bg: {
-            base: require("@images/work/longcode/bg1.jpg"),
+            base: require("@images/work/longcode/bg1.webp"),
             mask1: "#17121E",
             mask2: "#312931",
-            mask3: require("@images/work/longcode/bg2.jpg")
+            mask3: require("@images/work/longcode/bg2.webp")
           }
         },
 

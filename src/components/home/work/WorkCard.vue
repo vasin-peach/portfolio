@@ -12,19 +12,10 @@
       </div>
       <div class="col base-item d-none d-lg-block"><div></div></div>
       <div class="col base-item d-none d-md-block">
-        <div
-          :style="{
-            'background-image': 'url(' + options.bg.mask3 + ')'
-          }"
-        ></div>
+        <div v-webp:bg="options.bg.mask3"></div>
       </div>
     </div>
-    <div
-      class="row m-0 base"
-      :style="{
-        'background-image': 'url(' + options.bg.base + ')'
-      }"
-    >
+    <div class="row m-0 base" v-webp:bg="options.bg.base">
       <div class="col base-item d-none d-lg-block"></div>
       <div class="col base-item">
         <div
