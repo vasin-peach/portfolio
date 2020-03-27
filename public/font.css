@@ -1,0 +1,39 @@
+
+@font-face {
+  font-family: "Nobel";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src:  url('/fonts/nobel-regular.woff2') format('woff2'), 
+        url("/fonts/nobel-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nobel";
+  font-style: normal;
+  font-weight: lighter;
+  font-display: swap;
+  src:  url('/fonts/nobel-light.woff2') format('woff2'),
+        url("/fonts/nobel-light.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: "Nobel";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src:  url('/fonts/nobel-bold.woff2') format('woff2'), 
+        url("/fonts/nobel-bold.ttf") format("truetype");
+}
+
+
+* {
+  font-family: "Nobel", "sans-serif" !important;
+}
+
+
+
+a {
+  text-decoration: none;
+}
