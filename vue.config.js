@@ -1,7 +1,7 @@
 // Import
 const path = require("path");
 const CompressionPlugin = require("compression-webpack-plugin");
-const ImageminWebpWebpackPlugin = require("imagemin-webp-webpack-plugin");
+// const ImageminWebpWebpackPlugin = require("imagemin-webp-webpack-plugin");
 
 module.exports = {
   chainWebpack: config => {
@@ -20,6 +20,6 @@ module.exports = {
 
     // compress
     config.plugin("CompressionPlugin").use(CompressionPlugin);
-    config.plugin("ImageminWebpWebpackPlugin").use(ImageminWebpWebpackPlugin);
+    // config.plugin("ImageminWebpWebpackPlugin").use(ImageminWebpWebpackPlugin);
   }
 };
