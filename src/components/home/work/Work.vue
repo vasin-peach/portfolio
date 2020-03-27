@@ -226,7 +226,7 @@ export default {
           button: "dark",
           colors: ["#FFB42A", "#842B2D", "#3E486B", "#f2f2f2"],
           bg: {
-            base: require("@images/work/studentclub/bg1.png"),
+            base: require("@images/work/studentclub/bg1.jpg"),
             mask1: "#842B2D",
             mask2: "#fff",
             mask3: require("@images/work/studentclub/bg2.jpg")
