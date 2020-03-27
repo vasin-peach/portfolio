@@ -25,8 +25,8 @@ export default {
 @import "~bootstrap";
 @import "~bootstrap-vue";
 
-@import url("https://fonts.googleapis.com/css?family=Baloo+2:400,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Sen:400,700&display=swapp");
+// @import url("https://fonts.googleapis.com/css?family=Baloo+2:400,700&display=swap");
+// @import url("https://fonts.googleapis.com/css?family=Sen:400,700&display=swapp");
 @import "@scss/media";
 @import "@scss/font";
 @import "@scss/color";

@@ -17,6 +17,7 @@
 import Brand from "@components/home/Brand";
 import Intro from "@components/home/intro/Intro";
 import Work from "@components/home/work/Work";
+
 export default {
   name: "Home",
   components: {
