@@ -21,13 +21,14 @@ export default {
 </script>
 
 <style lang="scss">
+@import "~bootstrap";
+@import "~bootstrap-vue";
+
 @import "@scss/media";
 @import "@scss/color";
 @import "@scss/bootstrap";
 @import "@scss/swiper";
 @import "@scss/smooth_scroll";
-@import "~bootstrap";
-@import "~bootstrap-vue";
 
 html,
 body {
