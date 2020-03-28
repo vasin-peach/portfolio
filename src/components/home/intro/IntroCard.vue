@@ -31,8 +31,6 @@ export default {
 <style lang="scss" scoped>
 @import "@scss/color";
 @import "@scss/media";
-.intro-card-component {
-}
 .intro-head {
   display: flex;
   align-items: center;
@@ -61,7 +59,6 @@ export default {
   .card-title {
     font-size: 35px;
     font-weight: bold;
-    white-space: pre-wrap;
     word-wrap: break-word;
     font-family: inherit;
     color: $yellow1;

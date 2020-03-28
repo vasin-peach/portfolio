@@ -8,7 +8,10 @@
       <div class="work-container">
         <Work />
       </div>
-      <div class="h"></div>
+      <div class="footer-container">
+        <Footer />
+      </div>
+      <!-- <div class="h"></div> -->
     </div>
   </div>
 </template>
@@ -17,13 +20,15 @@
 import Brand from "@components/home/Brand";
 import Intro from "@components/home/intro/Intro";
 import Work from "@components/home/work/Work";
+import Footer from "@components/home/footer/Footer";
 
 export default {
   name: "Home",
   components: {
     Brand,
     Intro,
-    Work
+    Work,
+    Footer
   }
 };
 </script>
