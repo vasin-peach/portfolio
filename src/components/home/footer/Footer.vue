@@ -86,6 +86,7 @@ export default {
   padding-bottom: 70px;
   padding-top: 40px;
   background: rgba($color: $yellow2, $alpha: 0.1);
+  // background: rgba($color: $yellow1, $alpha: 0.9);
   background-image: url("~@images/circle5.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -135,9 +136,10 @@ export default {
   // display: inline-block;
   border-bottom: 3px solid $yellow1;
   img {
-    width: 50px;
+    width: 30px;
     margin-right: 30px;
     transition: opacity 0.3s ease-out;
+    background: $white1;
     &:hover {
       opacity: 0.8;
     }
