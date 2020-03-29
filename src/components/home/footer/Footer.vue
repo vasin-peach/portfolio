@@ -62,8 +62,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@scss/media";
 .footer-component {
   margin-top: 200px;
+
+  @include sm {
+    margin-top: 100px;
+  }
 }
 @import "@scss/color";
 @import "@scss/media";
