@@ -143,6 +143,10 @@ export default {
       > p {
         margin-top: 1rem;
         font-weight: bold;
+
+        @include lg {
+          font-size: 13px;
+        }
       }
       > div {
         display: block;
@@ -183,12 +187,16 @@ export default {
     }
 
     .title-text {
-      font-size: 70px;
+      font-size: 60px;
       text-align: center;
       font-weight: bold;
 
+      @include lg {
+        font-size: 40px;
+      }
+
       @include md {
-        font-size: 50px;
+        font-size: 40px;
       }
       @include sm {
         font-size: 35px;
