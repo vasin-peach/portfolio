@@ -101,7 +101,49 @@ export default {
           }
         },
         {
-          title: "SCAPPER",
+          title: "CARS&COFFEE",
+          link: "https://www.carsandcoffee.sg/certified-pre-owned-cars",
+          desc:
+            "WORKING ON DESIGN AND DEVELOPMENT 'PRE-OWNED CARS' WITH NUXT.JS AND USER REQUIREMENT TO NEED WEBSITE SUPPORT DYNAMIC SEO",
+          tags: [
+            "#Vue",
+            "Nuxt",
+            "#Scss",
+            "#Webpack",
+            "#Srollmagic",
+            "#GSAP",
+            "#Mobile"
+          ],
+          textColor: "#fff",
+          titleColor: "#fff",
+          button: "white",
+          colors: ["#1e1e1e", "#f1d5b4", "#ffffff"],
+          bg: {
+            base: require("@images/work/cac/bg.jpg"),
+            mask1: "#1e1e1e",
+            mask2: "#9f8f7c",
+            mask3: require("@images/work/cac/bg2.jpg")
+          }
+        },
+        {
+          title: "REVEALING",
+          link: "https://rwc1995.netlify.app/",
+          desc:
+            "REVEALING CLINIC IS A CLINIC FOR AESTHETICS AND COSMETIC SURGERY, WORKING ON DESIGN AND DEVELOPMENT WEBSITE WITH VUE FRAMEWORK",
+          tags: ["#Vue.js", "#Scss", "Webpack", "Slider"],
+          textColor: "#1e1e1e",
+          titleColor: "#cc214f",
+          button: "dark",
+          colors: ["#fedaa9", "#db8a86", "#faa8af"],
+          bg: {
+            base: require("@images/work/rwc/bg.jpg"),
+            mask1: "#ff929d",
+            mask2: "#fff",
+            mask3: ""
+          }
+        },
+        {
+          title: "PROFILE SCRAPE",
           link: "https://github.com/vasin-peach/linkedin-profile-scraper",
           desc:
             "LINKEDIN PROFILE SCRAPER USE SELENIUM TO EXTRACT USER DATA INCLUDE [SKILL, EDUCATION, WORK POSITION, COMMON DATA]",
@@ -266,7 +308,11 @@ export default {
       this.updateCurrent();
     },
     updateCurrent() {
-      this.menu.currentWidth = this.menu.current * this.menu.width;
+      if (this.menu.current == 1) {
+        this.menu.currentWidth = 20;
+      } else {
+        this.menu.currentWidth = this.menu.current * this.menu.width;
+      }
       this.menu.data = this.works[this.menu.current - 1];
     }
   }
@@ -392,7 +438,7 @@ export default {
           height: 20px;
           line-height: 20px;
           padding-right: 10px;
-          font-size: 15px;
+          font-size: 13px;
         }
       }
 
