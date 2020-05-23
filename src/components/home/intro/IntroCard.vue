@@ -97,7 +97,7 @@ export default {
     > div {
       width: 100%;
       img {
-        width: 50%;
+        width: 100%;
       }
     }
 

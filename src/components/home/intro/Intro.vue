@@ -53,7 +53,7 @@ export default {
           title: "PEACH(ES)\nVASIN SERMSAMPAN",
           sub:
             "King Mongkut's Institute Of Technology Ladkrabang  \nData Science And Business Analytics",
-          img: require("@images/profile.jpg")
+          img: require("@images/profile2.jpg")
         }
       ]
     };
