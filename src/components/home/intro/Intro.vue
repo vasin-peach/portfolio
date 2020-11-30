@@ -2,16 +2,19 @@
   <div class="intro-component">
     <div class="row">
       <div
-        class="col-12 col-md-6 intro-left intro-float  pr-sm-3 pr-md-4 pr-lg-5 d-none d-md-block"
+        class="col-12 col-md-6 intro-left intro-float  pr-sm-3 pr-md-4 pr-lg-5 "
       >
         <IntroCard :options="introCards[2]" />
-        <IntroCard :options="introCards[0]" />
+        <IntroCard :options="introCards[0]" class="d-none d-md-block" />
       </div>
       <div
         class="col-12 col-md-6 intro-right intro-float  pl-sm-3 pl-md-4 pl-lg-5"
       >
-        <IntroCard :options="introCards[1]" />
-        <IntroCard :options="introCards[3]" class="card-highlight" />
+        <IntroCard :options="introCards[1]" class="d-none d-md-block" />
+        <IntroCard
+          :options="introCards[3]"
+          class="card-highlight d-none d-md-block"
+        />
       </div>
     </div>
   </div>
@@ -35,18 +38,67 @@ export default {
         },
         {
           head: "ABOUT",
-          title: "FULL STACK DEVELOPER \r FREELANCE \nEXPERIENCE 3 Y+",
-          sub: "building application and design website for leading companies.",
+          title: "FULL STACK DEVELOPER",
+          sub: "Building application and design website for leading companies.",
           text:
-            "Also have experience in data science on university projects such as model articles classification data visualization with real-time frontend used D3.js, Tableau, PowerBI and data extraction from various sources (ex. LinkedIn, college board), looking for an opportunities to work in Full Stack and Data Science field as CO-OP and Internship"
+            "I am a fullstack development for 3 years, Specialize in frontend stack [Vue], backend stack [express, go(new)], Data engineering and also have experience in DevOps (CI/CD with github, gitlab, Docker, GCP, AWS) now looking for an opportunities for data science, data engineer field as co-op or Internship."
         },
         {
           head: "BIO",
-          title: "21 YEAR OLD WITH \rFULL OF PASSION TO \rDOING NEW THING ",
-          sub:
-            "My name is vasin sermsampan  or you can call me `Peach`,  I am 21 years old, studying data science and business analytic at kingmongkutt's Institute of Technology ladkrabang, ",
+          title: "",
+          sub: "",
           text:
-            "Now, have experience in web Full-Stack area for 3 year, Working freelance in Thailand, accepting work from both domestic and foreign countries, my main skills include Coding / Creative / Art / UX & UI Design and Data Science."
+            "I am 21 years old, studying in data science and business analytic at KingMongkutt's institute of technology ladkrabang. Now working as a freelance fullstack developer, accepting work from both domestic and foreign countries,",
+          skills: [
+            {
+              name: "Data skill:",
+              skill: [
+                "hadoop",
+                "spark",
+                "scala",
+                "airflow",
+                "dbms",
+                "nosql",
+                "firebase",
+                "sklearn",
+                "machine learning",
+                "puppeteer",
+                "selenium"
+              ]
+            },
+            {
+              name: "Infrastructure skill:",
+              skill: [
+                "git",
+                "github actions",
+                "gitlab ci",
+                "ci/cd",
+                "linux",
+                "nginx",
+                "aws",
+                "gcp",
+                "docker",
+                "docker-compose",
+                "semantic release",
+                "reverse-proxy"
+              ]
+            },
+            {
+              name: "Development skill:",
+              skill: [
+                "node",
+                "vue",
+                "next",
+                "react",
+                "express",
+                "go",
+                "python",
+                "sass",
+                "jest",
+                "php"
+              ]
+            }
+          ]
         },
         {
           head: "WELCOME",

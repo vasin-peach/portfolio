@@ -8,7 +8,7 @@
 ### Tech
 * [Vue.js]
 * [GSAP]
-* [SrollMagic]
+* [ScrollMagic]
 * [Swiper]
 * [Bootstrap]
 

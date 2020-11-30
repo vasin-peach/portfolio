@@ -85,6 +85,55 @@ export default {
       },
       works: [
         {
+          title: "DEVCURATE",
+          link: "https://www.devcurate.co/",
+          desc:
+            "LEADING PLATFORM THAT CURATES CAREER ADVANCEMENT OPPORTUNITIES FOR IMPACT-DRIVEN PEOPLE",
+          // tags: ["#Vue", "#Vuex", "#Scss", "#webpack", "#video"],
+          textColor: "fff",
+          titleColor: "#f2f2f2",
+          button: "white",
+          colors: ["#5cc7d2", "#13293d", "#ffffff"],
+          bg: {
+            base: require("@images/work/devcurate/bg.jpg"),
+            mask1: "#13293d",
+            mask2: "#041423",
+            mask3: ""
+          }
+        },
+        {
+          title: "VANDA",
+          link: "https://www.vanda.video/",
+          desc: "INTERVIEW ANYONE ANYTIME ANYWHERE",
+          // tags: ["#Vue", "#Vuex", "#Scss", "#webpack", "#video"],
+          textColor: "#3f115b",
+          titleColor: "#041423",
+          button: "dark",
+          colors: ["#9a258f", "#3f115b", "#041423", "#ffffff", "#eea70b"],
+          bg: {
+            base: require("@images/work/vanda/bg.jpg"),
+            mask1: "#9a258f",
+            mask2: "#f2f2f2",
+            mask3: ""
+          }
+        },
+        {
+          title: "TCAS ITKMITL",
+          link: "https://tcas.it.kmitl.ac.th/",
+          desc: "TCAS PORTFOLIO SUBMISSION AND EVALUATING SERVICE",
+          // tags: ["#Vue", "#Vuex", "#Scss", "#webpack", "#video"],
+          textColor: "#023145",
+          titleColor: "#0889ff",
+          button: "dark",
+          colors: ["#023145", "#0889ff", "#ffffff"],
+          bg: {
+            base: require("@images/work/tcas/bg.jpg"),
+            mask1: "#023145",
+            mask2: "#f2f2f2",
+            mask3: require("@images/work/tcas/bg2.jpg")
+          }
+        },
+        {
           title: "ITCAMP 14",
           link: "https://itcamp14.netlify.com/",
           desc: "GETTING TO KNOW 'IT' CHOOSE THE PATH TO UNIVERSITY",
