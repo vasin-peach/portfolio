@@ -84,18 +84,20 @@ export default {
               ]
             },
             {
-              name: "Development skill:",
+              name: "Developer skill:",
               skill: [
                 "node",
                 "vue",
                 "next",
                 "react",
+                "typescript",
+                "eslint",
                 "express",
                 "go",
                 "python",
                 "sass",
                 "jest",
-                "php"
+                "laravel"
               ]
             }
           ]
