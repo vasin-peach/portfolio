@@ -414,7 +414,7 @@ export default {
 }
 
 .work-component {
-  margin-top: -100px;
+  margin-top: -30vh;
   position: relative;
 
   @include sm {

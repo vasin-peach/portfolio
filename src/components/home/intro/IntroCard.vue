@@ -26,7 +26,7 @@
               {{ field.name }}
               <b-icon-chevron-down />
             </div>
-            <b-collapse :id="`collapse-${field.name}`">
+            <b-collapse :id="`collapse-${field.name}`" visible>
               <div class="row ml-0">
                 <div
                   v-for="skill in field.skill"
