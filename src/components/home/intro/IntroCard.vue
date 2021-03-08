@@ -13,7 +13,7 @@
           {{ options.sub }}
         </div>
         <div class="card-text">
-          {{ options.text }}
+          <span v-html="options.text" />
           <div><img :src="options.img" /></div>
         </div>
         <div class="card-text" v-if="options.skills">

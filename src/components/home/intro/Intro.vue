@@ -5,7 +5,7 @@
         class="col-12 col-md-6 intro-left intro-float  pr-sm-3 pr-md-4 pr-lg-5 "
       >
         <IntroCard :options="introCards[2]" />
-        <IntroCard :options="introCards[0]" class="d-none d-md-block" />
+        <!-- <IntroCard :options="introCards[0]" class="d-none d-md-block" /> -->
       </div>
       <div
         class="col-12 col-md-6 intro-right intro-float  pl-sm-3 pl-md-4 pl-lg-5"
@@ -39,9 +39,13 @@ export default {
         {
           head: "ABOUT",
           title: "FULL STACK DEVELOPER",
-          sub: "Building application and design website for leading companies.",
+          sub:
+            "Working as web fullstack for 3y+ experience in building application, design UX/UI for many leading companies",
           text:
-            "I am a fullstack development for 3 years, Specialize in frontend stack [Vue], backend stack [express, go(new)], Data engineering and also have experience in DevOps (CI/CD with github, gitlab, Docker, GCP, AWS) now looking for an opportunities for data science, data engineer field as co-op or Internship."
+            "- Strong expereince in all process of develop web application both frontend, backend. <br/>" +
+            "- Familiar with design, created, test, maintain overall data management and process system. <br/>" +
+            "- Interest in bigdata framework like hadoop, spark, scala <br/>" +
+            "- Expereince in develop recommendation system with content based filtering to recommend career path based on user profile"
         },
         {
           head: "BIO",
@@ -63,7 +67,8 @@ export default {
                 "sklearn",
                 "machine learning",
                 "puppeteer",
-                "selenium"
+                "selenium",
+                "keras"
               ]
             },
             {
