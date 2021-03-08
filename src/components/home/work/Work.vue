@@ -85,6 +85,23 @@ export default {
       },
       works: [
         {
+          title: "SKILL MAPPING",
+          link: "http://skill.kmitl.ac.th/",
+          desc:
+            "SKILL MAPPING PROVIDES A VIEW OF THE ENTIRE STUDY PLAN HOW EACH PART IS INVOLVED AND WHICH SKILLS ARE OPTIMAL BY VIRTUALIZE AND ANALYZE THOUGHT LINKEDIN DATA AND TEACHER IN EACH FACULTY",
+          // tags: ["#Vue", "#Vuex", "#Scss", "#webpack", "#video"],
+          textColor: "#5F5B57",
+          titleColor: "#372A1E",
+          button: "dark",
+          colors: ["#DBDCE3", "#F47B3E", "#E35205"],
+          bg: {
+            base: require("@images/work/skill-mapping/bg.jpg"),
+            mask1: "#E35205",
+            mask2: "#fff",
+            mask3: require("@images/work/skill-mapping/cover.jpg")
+          }
+        },
+        {
           title: "DEVCURATE",
           link: "https://www.devcurate.co/",
           desc:
