@@ -17,7 +17,7 @@
     "jquery": "^3.4.1",
     "pixi.js": "^5.2.1",
     "smooth-scrollbar": "^8.5.1",
-    "swiper": "^5.3.6",
+    "swiper": "^6.5.1",
     "vue": "^2.6.11",
     "vue-awesome-swiper": "^4.0.3",
     "vue-pixi": "^0.1.1",
