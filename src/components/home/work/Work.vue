@@ -102,6 +102,27 @@ export default {
           }
         },
         {
+          title: "JOB MATCHING",
+          link: "#",
+          desc:
+            "JOB RECOMMENDATION SYSTEM (IT FIELD) USING THE TECHNIQUE OF DIVIDING CANDIDATE INTO SUB-DIVISIONS, AND SUGGEST THE MOST SUITABLE JOB POSITION BY USING MATCHING PROFILE AND JOB-CONTENT",
+          textColor: "#5F5B57",
+          titleColor: "#FF7262",
+          tags: [
+            "#Content-based Filtering",
+            "#NLP",
+            "#Apache Airflow",
+            "#Puppeteer",
+            "#Scikit Lean"
+          ],
+          colors: ["#1A0C29", "#11BC7A", "#1ABCFE", "#AE75F7", "#F24E1E"],
+          bg: {
+            base: require("@images/work/job-recomm/bg.jpg"),
+            mask1: "#1A0C29",
+            mask2: "#fff"
+          }
+        },
+        {
           title: "DEVCURATE",
           link: "https://www.devcurate.co/",
           desc:
